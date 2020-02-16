@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <header>
-        <NavBar>
-        </NavBar>
+        <NavBar/>
+
 
       </header>
       <main>

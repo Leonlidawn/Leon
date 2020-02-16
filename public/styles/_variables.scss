@@ -1,0 +1,43 @@
+$color-background: rgb(15, 15, 15);
+$color-trivial: rgba(255, 255, 255, 0.5);
+
+$color-text: white;
+
+$color-highlight-white: white;
+$color-highlight-green: #4bffa5;
+
+$XS: 420px;
+$S: 480px;
+$M: 767px;
+$ML: 992px;
+$L: 1200px;
+
+//media queries with
+@mixin MQ($canvas) {
+	@if $canvas==XS {
+		@media only screen and (max-width: $XS) {
+			@content;
+		}
+	}
+	@if $canvas==S {
+		@media only screen and (max-width: $S) {
+			@content;
+		}
+	} @else if $canvas==M {
+		@media only screen and (max-width: $M) {
+			@content;
+		}
+	} @else if $canvas==ML {
+		@media only screen and (max-width: $ML) {
+			@content;
+		}
+	} @else if $canvas==L {
+		@media only screen and (max-width: $L) {
+			@content;
+		}
+	} @else {
+		@media only screen and (max-width: $canvas) {
+			@content;
+		}
+	}
+}

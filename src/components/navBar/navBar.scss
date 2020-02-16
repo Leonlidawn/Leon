@@ -1,0 +1,58 @@
+@import "public/styles/variables";
+
+.navigation-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+	margin: auto;
+
+	&__name {
+		color: $color-highlight-white;
+	}
+
+	&__top-bar {
+		display: flex;
+		flex-grow: 1;
+		justify-content: space-around;
+		background-color: transparent;
+		li {
+			list-style-type: none;
+			a {
+				color: $color-highlight-white;
+			}
+		}
+	}
+
+	&__side-bar {
+		background-color: transparent;
+		display: flex;
+		flex-direction: column;
+
+		&__menu-button {
+			cursor: pointer;
+			width: 20px;
+			height: 20px;
+			background: transparent;
+			appearance: none;
+			outline: none;
+			// background-color: white;
+			mask-image: url("/images/icons/icon-menu.svg");
+			mask-position: center;
+			mask-size: contain;
+			mask-repeat: no-repeat;
+			mask-position: center;
+			background-color: white;
+			background-size: 100%;
+		}
+		&__options {
+			display: none;
+		}
+		li {
+			list-style-type: none;
+			a {
+				color: $color-highlight-white;
+			}
+		}
+	}
+}

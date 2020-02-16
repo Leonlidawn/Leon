@@ -1,41 +1,34 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
+import './navBar.scss';
 function NavBar() {
 
-  return (
+	return (
 
-    <nav className='navigation-bar transparent' >
-
-      <ul className="top-bar">
-        <div className="left">
-          <li><NavLink to="">Home</NavLink></li>
-          <li><NavLink to="">Works</NavLink></li>
-          <li><NavLink to="">Resume</NavLink></li>
-          <li><NavLink to="">Contact</NavLink></li>
-        </div>
-
-
-
-        <div className="right">
-
-          {/* <UserButtons currentUser={currentUser} currentPath={currentPath} /> */}
-
-        </div>
-      </ul >
+		<nav className='navigation-bar' >
+			<div className="navigation-bar__name">
+				Leon Li
+			</div>
+			<ul className="navigation-bar__top-bar">
+				<li><NavLink to="/">Home</NavLink></li>
+				<li><NavLink to="/works">Works</NavLink></li>
+				<li><NavLink to="/resume">Resume</NavLink></li>
+				<li><NavLink to="/contacts">Contact</NavLink></li>
+			</ul >
 
 
-      <ul className="dropdown-content">
-        {/* post a task is only available when you haved logged in */}
+			<ul className="navigation-bar__side-bar">
+				<li><button className="navigation-bar__side-bar__menu-button"></button></li>
+				<div className="navigation-bar__side-bar__options">
+					<li><NavLink to="/">Home</NavLink></li>
+					<li><NavLink to="/works">Works</NavLink></li>
+					<li><NavLink to="/resume">Resume</NavLink></li>
+					<li><NavLink to="/contacts">Contact</NavLink></li>
+				</div>
+			</ul >
 
-        <li><NavLink to="">Home</NavLink></li>
-        <li><NavLink to="">Works</NavLink></li>
-        <li><NavLink to="">Resume</NavLink></li>
-        <li><NavLink to="">Contact</NavLink></li>
-      </ul>
-
-
-    </nav >
-  );
+		</nav >
+	);
 }
 
 export default NavBar;
