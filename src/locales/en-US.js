@@ -1,4 +1,5 @@
 export default {
+	'name': 'leon li (Weidong)',
 	'navigation.home': 'home',
 	'navigation.resume': 'resume',
 	'navigation.works': 'works',
