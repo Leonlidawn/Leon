@@ -5,26 +5,26 @@ import HomePage from './pages/homePage/HomePage';
 import './App.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header>
-        <NavBar/>
+	return (
+		<div className="App">
+			<header>
+				<NavBar />
 
 
-      </header>
-      <main>
-        <Route>
-          <Switch>
-            <Route path='/'
-              component={() =>
-                <HomePage
-                />}
-            />
-          </Switch>
-        </Route>
-      </main>
-    </div>
-  );
+			</header>
+			<main>
+				<Route>
+					<Switch>
+						<Route path='/'
+							component={() =>
+								<HomePage
+								/>}
+						/>
+					</Switch>
+				</Route>
+			</main>
+		</div>
+	);
 }
 
 export default App;

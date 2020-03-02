@@ -4,11 +4,25 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 80%;
+	width: 90%;
 	margin: auto;
+	padding-top: 40px;
+	font-size: 16px;
 
 	&__name {
-		color: $color-highlight-white;
+		display: flex;
+		flex-grow: 3;
+		text-transform: capitalize;
+		&__first {
+			color: $color-trivial;
+			&::after {
+				content: " ";
+				white-space: pre;
+			}
+		}
+		&__second {
+			color: $color-highlight-white;
+		}
 	}
 
 	&__top-bar {
@@ -19,7 +33,10 @@
 		li {
 			list-style-type: none;
 			a {
-				color: $color-highlight-white;
+				color: $color-trivial;
+				&.active {
+					color: $color-highlight-white;
+				}
 			}
 		}
 	}
@@ -27,6 +44,9 @@
 	&__side-bar {
 		background-color: transparent;
 		display: flex;
+		&.hide {
+			display: none;
+		}
 		flex-direction: column;
 
 		&__menu-button {
@@ -40,11 +60,13 @@
 			mask-size: contain;
 			mask-repeat: no-repeat;
 			mask-position: center;
-			background-color: white;
+			background-color: $color-trivial;
 			background-size: 100%;
 		}
 		&__options {
-			display: none;
+			&.hide {
+				display: none;
+			}
 		}
 		li {
 			list-style-type: none;

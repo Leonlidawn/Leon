@@ -1,5 +1,6 @@
 export default {
-	'name': 'leon li (Weidong)',
+	'name.first': 'leon',
+	'name.second': 'li',
 	'navigation.home': 'home',
 	'navigation.resume': 'resume',
 	'navigation.works': 'works',

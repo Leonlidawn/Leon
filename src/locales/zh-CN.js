@@ -1,5 +1,6 @@
 export default {
-	'name': 'Leon li (炜东)',
+	'name.first': 'leon',
+	'name.second': 'li',
 	'navigation.home': '首页',
 	'navigation.resume': '简历',
 	'navigation.works': '作品',

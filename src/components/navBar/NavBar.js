@@ -11,7 +11,8 @@ function NavBar() {
 
 		<nav className='navigation-bar' >
 			<div className="navigation-bar__name">
-				{myformat('name')}
+				<div className='navigation-bar__name__first'>{myformat('name.first')}</div>
+				<div className='navigation-bar__name__second'>{myformat('name.second')}</div>
 			</div>
 			<ul className="navigation-bar__top-bar">
 				<li><NavLink to="/">Home</NavLink></li>
@@ -20,10 +21,9 @@ function NavBar() {
 				<li><NavLink to="/contacts">Contact</NavLink></li>
 			</ul >
 
-
-			<ul className="navigation-bar__side-bar">
-				<li><button className="navigation-bar__side-bar__menu-button"></button></li>
-				<div className="navigation-bar__side-bar__options">
+			<ul className="navigation-bar__side-bar hide">
+				<li><button className="navigation-bar__side-bar__menu-button "></button></li>
+				<div className="navigation-bar__side-bar__options hide">
 					<li><NavLink to="/">Home</NavLink></li>
 					<li><NavLink to="/works">Works</NavLink></li>
 					<li><NavLink to="/resume">Resume</NavLink></li>

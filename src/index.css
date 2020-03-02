@@ -1,5 +1,8 @@
 @import "./styles/normalize.css";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 * {
+	font-family: Roboto;
+	letter-spacing: 0.6px;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
