@@ -1,10 +1,10 @@
 export default {
 	'name.first': 'leon',
 	'name.second': 'li',
-	'navigation.home': 'home',
-	'navigation.resume': 'resume',
-	'navigation.works': 'works',
-	'navigation.contacts': 'contacts',
+	'menu.home': 'home',
+	'menu.resume': 'resume',
+	'menu.works': 'works',
+	'menu.contacts': 'contacts',
 	'home.banner.array':
 		[
 			'I am a web developer',

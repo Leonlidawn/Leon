@@ -1,5 +1,7 @@
 .homePage {
-	p {
-		background-color: wheat;
-	}
+	display: flex;
+	background-image: url(protrait.png);
+	background-position-x: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }

@@ -1,12 +1,11 @@
-import './homePage.scss';
+import './resume.scss';
 import React from 'react';
-// import en from 'src/locales/en-US';
 import zh from 'src/locales/zh-CN';
 import { LANGUAGE } from 'src/constants/language';
 
-function HomePage() {
+function Resume() {
 	return (
-		<div className="homePage">
+		<div className="Resume">
 			{/* left side */}
 			<div>
 				{/* up  */}
@@ -28,4 +27,4 @@ function HomePage() {
 		</div>
 	)
 }
-export default HomePage;
+export default Resume;

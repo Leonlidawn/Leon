@@ -1,10 +1,10 @@
 export default {
 	'name.first': 'leon',
 	'name.second': 'li',
-	'navigation.home': '首页',
-	'navigation.resume': '简历',
-	'navigation.works': '作品',
-	'navigation.contacts': '联系方式',
+	'menu.home': '首页',
+	'menu.resume': '简历',
+	'menu.works': '作品',
+	'menu.contacts': '联系方式',
 	'home.banner.array':
 		[
 			'在开发的路上',

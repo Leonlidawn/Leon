@@ -1,10 +1,9 @@
-import './homePage.scss';
+import './works.scss';
 import React from 'react';
-// import en from 'src/locales/en-US';
 import zh from 'src/locales/zh-CN';
 import { LANGUAGE } from 'src/constants/language';
 
-function HomePage() {
+function Works() {
 	return (
 		<div className="homePage">
 			{/* left side */}
@@ -28,4 +27,4 @@ function HomePage() {
 		</div>
 	)
 }
-export default HomePage;
+export default Works;
