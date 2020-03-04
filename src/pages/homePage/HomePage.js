@@ -1,12 +1,13 @@
 import './homePage.scss';
 import React from 'react';
+import Typewriter from 'typewriter-effect';
 // import en from 'src/locales/en-US';
 import zh from 'src/locales/zh-CN';
 import { LANGUAGE } from 'src/constants/language';
 import { format } from 'src/util';
 
 function HomePage() {
-	let bannerArray = format('home.banner.arry');
+	let myFormat = (id) => format(LANGUAGE.CHINESE, id)
 
 	return (
 		<div className="homePage">
@@ -15,7 +16,7 @@ function HomePage() {
 				{/* up  */}
 				<div className="homePage__left__up">
 					<div className="homePage__portrait"></div>
-					<div className="homePage__intro">{format('introduction')}</div>
+					<div className="homePage__intro">{myFormat('introduction')}</div>
 				</div>
 
 				{/* down */}
@@ -25,7 +26,14 @@ function HomePage() {
 						<p>T: +61 481 555 767</p>
 					</div>
 					<div className="homePage__banner">
+						<Typewriter
+							options={{
+								strings: myFormat('home.banner.array'),
+								autoStart: true,
+								loop: true,
 
+							}}
+						/>
 					</div>
 
 				</div>
