@@ -10,10 +10,10 @@ export default {
 			'I am a web developer',
 			'I code cool websites',
 			'I enjoy diving into problem and get it solved',
-			'Patience and attention to details makes perfection'
+			'Patience and attention to details makes perfection',
+			'I love Javascript, React and Node.js',
 		]
 	,
-	'home.introduction': 'I love Javascript, React and Node.js',
 	'introduction':
 		`A passionate full-stack web developer who loves delivering solutions with code. I enjoy the excitement of learning new things and always like to share knowledge with others. I am an excellent team player in Agile/Scrum teams. I believe efficient and responsible communications are the fundamentals of good collaboration.`,
 	'skills.array':

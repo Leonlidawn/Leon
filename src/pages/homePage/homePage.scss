@@ -1,7 +1,31 @@
 .homePage {
 	display: flex;
-	background-image: url(protrait.png);
-	background-position-x: center;
-	background-size: contain;
-	background-repeat: no-repeat;
+	min-height: 80vh;
+	flex-grow: 1;
+	&__left {
+		flex-grow: 9;
+		&__up {
+			height: 80%;
+		}
+		&__bottom {
+		}
+	}
+	&__right {
+		flex-grow: 1;
+	}
+
+	&__portrait {
+		margin-left: 10vw;
+		height: 100%;
+		display: block;
+		flex-grow: 1;
+		background-image: url(portrait1.jpeg);
+		background-position-x: left;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	&__intro {
+	}
+	&__intro {
+	}
 }

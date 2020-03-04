@@ -33,9 +33,19 @@
 		li {
 			list-style-type: none;
 			a {
+				position: relative;
 				color: $color-trivial;
+				bottom: 0;
 				&.active {
 					color: $color-highlight-white;
+					border-bottom: yellowgreen 1px solid;
+				}
+			}
+			&:hover {
+				cursor: pointer;
+				a {
+					transition: all 0.5s;
+					bottom: 5px;
 				}
 			}
 		}

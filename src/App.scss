@@ -4,6 +4,10 @@
 	background-color: $color-background;
 	width: 100vw;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+
 	a {
 		text-decoration: none;
 	}

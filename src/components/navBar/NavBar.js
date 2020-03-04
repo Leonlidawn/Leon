@@ -15,7 +15,7 @@ function NavBar() {
 				<div className='navigation-bar__name__second'>{myformat('name.second')}</div>
 			</div>
 			<ul className="navigation-bar__top-bar">
-				<li><NavLink to="/">{myformat('menu.home')}</NavLink></li>
+				<li><NavLink exact to="/">{myformat('menu.home')}</NavLink></li>
 				<li><NavLink to="/works">{myformat('menu.works')}</NavLink></li>
 				<li><NavLink to="/resume">{myformat('menu.resume')}</NavLink></li>
 				<li><NavLink to="/contacts">{myformat('menu.contacts')}</NavLink></li>

@@ -5,7 +5,7 @@ import HomePage from './pages/homePage/HomePage';
 import Works from './pages/works/Works';
 import Resume from './pages/resume/Resume';
 import Contacts from './pages/contacts/Contacts';
-
+import { LANGUAGE } from './constants/language';
 import './App.scss';
 
 function App() {
@@ -24,17 +24,17 @@ function App() {
 						/>
 						<Route path='/works'
 							component={() =>
-								<HomePage
+								<Works
 								/>}
 						/>
 						<Route path='/resume'
 							component={() =>
-								<HomePage
+								<Resume
 								/>}
 						/>
 						<Route path='/contacts'
 							component={() =>
-								<HomePage
+								<Contacts
 								/>}
 						/>
 					</Switch>
