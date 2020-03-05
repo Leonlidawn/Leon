@@ -21,7 +21,7 @@
 			}
 		}
 		&__second {
-			color: $color-highlight-white;
+			color: $color-highlight-1;
 		}
 	}
 
@@ -29,7 +29,6 @@
 		display: flex;
 		flex-grow: 1;
 		justify-content: space-around;
-		background-color: transparent;
 		li {
 			list-style-type: none;
 			a {
@@ -37,8 +36,8 @@
 				color: $color-trivial;
 				bottom: 0;
 				&.active {
-					color: $color-highlight-white;
-					border-bottom: yellowgreen 1px solid;
+					color: $color-highlight-1;
+					border-bottom: rgb(153, 187, 226) 3px solid;
 				}
 			}
 			&:hover {
@@ -81,7 +80,7 @@
 		li {
 			list-style-type: none;
 			a {
-				color: $color-highlight-white;
+				color: $color-highlight-1;
 			}
 		}
 	}
