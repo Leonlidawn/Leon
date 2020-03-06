@@ -30,5 +30,6 @@ export default {
 			'协作模式: Agile / Scrum / Kanban',
 		],
 	'contact.email': '邮箱',
-	'contact.mobile': '手机'
+	'contact.mobile': '手机',
+	'follow-me': '关注我'
 };

@@ -1,5 +1,6 @@
 @import "./styles/normalize.css";
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
 * {
 	font-family: Roboto;
 	letter-spacing: 0.6px;

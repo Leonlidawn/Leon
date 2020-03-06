@@ -2,12 +2,12 @@ import { Delete } from 'react-typeme';
 import React from 'react';
 
 export default {
-	'name.first': 'leon',
-	'name.second': 'li',
-	'menu.home': 'home',
-	'menu.resume': 'resume',
-	'menu.works': 'works',
-	'menu.language': '英文',
+	'name.first': 'Leon',
+	'name.second': 'Li',
+	'menu.home': 'Home',
+	'menu.resume': 'Resume',
+	'menu.works': 'Works',
+	'menu.language': 'English',
 	'home.banner.array':
 		[
 			'I code cool websites',
@@ -36,6 +36,7 @@ I am an excellent team player in Agile/Scrum teams. I believe efficient and resp
 			'Tooling: Git, GitHub, NPM, BitBucket, JIRA',
 			'Methodologies: Agile / Scrum / Kanban',
 		],
-	'contact.email': 'email',
-	'contact.mobile': 'mobile'
+	'contact.email': 'Email',
+	'contact.mobile': 'Mobile',
+	'follow-me': 'Follow Me'
 };

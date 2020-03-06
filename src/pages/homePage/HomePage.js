@@ -25,19 +25,17 @@ function HomePage() {
 					<div className="homePage__intro">{myFormat('introduction')}</div>
 				</div>
 				<div className="homePage__left__bottom">
-					<div className="homePage__contacts">
-						<p>
-							<i className="icon far fa-envelope"></i>
-							Email: leonlidawn@gmail.com
+					<div className="homePage__contacts">						<p>
+						{myFormat('contact.email')}: leonlidawn@gmail.com
 						</p>
-						<p><i className="fas fa-mobile-alt"></i>
-							Mobile: +61 481 555 767
+						<p>
+							{myFormat('contact.mobile')}: +61 481 555 767
 						</p>
 					</div>
 					<div className="homePage__banner">
 						<TypeMe strings={myFormat('home.banner.array')} loop='true'
 							backspaceDelay='600'
-							typingSpeed='300'
+							typingSpeed='550'
 						/>
 					</div>
 				</div>
@@ -47,7 +45,7 @@ function HomePage() {
 			<div className="homePage__right">
 				<div className="homePage__social">
 					<span className="homePage__social__follow-me">
-						Follow Me
+						{myFormat('follow-me')}
 					</span>
 					<a className="homePage__social__icon" target="_blank" href="https://www.linkedin.com/in/weidong-li-leon/">
 						<i className="icon fab fa-linkedin"></i>

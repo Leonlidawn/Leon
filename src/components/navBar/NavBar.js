@@ -6,40 +6,40 @@ import { format } from 'src/util';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function NavBar() {
-	let myformat = (id) => format(LANGUAGE.CHINESE, id);
+	let myFormat = (id) => format(LANGUAGE.ENGLISH, id);
 
 	return (
 
 		<nav className='navigation-bar' >
 			<div className="navigation-bar__name">
 				<div className='navigation-bar__name__first'>
-					{myformat('name.first')}
+					{myFormat('name.first')}
 				</div>
-				<div className='navigation-bar__name__second'>{myformat('name.second')}</div>
+				<div className='navigation-bar__name__second'>{myFormat('name.second')}</div>
 			</div>
 			<ul className="navigation-bar__top-bar">
 				<li>
 					<NavLink exact to="/">
 						<i className="icon fas fa-home"></i>
-						{myformat('menu.home')}
+						{myFormat('menu.home')}
 					</NavLink>
 				</li>
 				<li>
 					<NavLink to="/works">
 						<i className="icon fas fa-laptop-code"></i>
-						{myformat('menu.works')}
+						{myFormat('menu.works')}
 					</NavLink>
 				</li>
 				<li>
 					<NavLink to="/resume">
 						<i className="icon fas fa-id-badge"></i>
-						{myformat('menu.resume')}
+						{myFormat('menu.resume')}
 					</NavLink>
 				</li>
 				<li>
 					<div className="language">
 						<i className="icon fas fa-globe"></i>
-						{myformat('menu.language')}
+						{myFormat('menu.language')}
 					</div>
 				</li>
 			</ul >

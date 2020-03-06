@@ -13,8 +13,9 @@
 	&__name {
 		display: flex;
 		flex-grow: 3;
-		text-transform: capitalize;
+
 		&__first {
+			font-family: "Permanent Marker", cursive;
 			color: $color-trivial;
 			&::after {
 				content: " ";
@@ -22,7 +23,8 @@
 			}
 		}
 		&__second {
-			color: $color-highlight-1;
+			font-family: "Permanent Marker", cursive;
+			// color: $color-highlight-1;
 		}
 	}
 
@@ -43,7 +45,7 @@
 				color: $color-trivial;
 				bottom: 0;
 				&.active {
-					color: $color-highlight-3;
+					color: $color-highlight-2;
 					font-weight: 700;
 					border: $color-highlight-1 2px dashed;
 				}
