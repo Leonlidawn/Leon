@@ -1,10 +1,7 @@
 import './homePage.scss';
 import React from 'react';
-// @ts-ignore
-import Typewriter from 'typewriter-effect';
-import TypeMe, { LineBreak, Delete } from 'react-typeme';
-
-import portrat from './portrait1.jpeg'
+import TypeMe from 'react-typeme';
+import portrait from './portrait1.jpeg'
 // import en from 'src/locales/en-US';
 import zh from 'src/locales/zh-CN';
 import { LANGUAGE } from 'src/constants/language';
@@ -20,7 +17,7 @@ function HomePage() {
 				{/* up  */}
 				<div className="homePage__left__up">
 					<div className="homePage__portrait">
-						<img className="homePage__portrait__image" src={portrat} />
+						<img className="homePage__portrait__image" src={portrait} />
 					</div>
 					<div className="homePage__intro">{myFormat('introduction')}</div>
 				</div>
@@ -47,9 +44,11 @@ function HomePage() {
 					<span className="homePage__social__follow-me">
 						{myFormat('follow-me')}
 					</span>
+
 					<a className="homePage__social__icon" target="_blank" href="https://www.linkedin.com/in/weidong-li-leon/">
 						<i className="icon fab fa-linkedin"></i>
 					</a>
+
 					<a className="homePage__social__icon" target="_blank" href="https://github.com/Leonlidawn">
 						<i className="icon fab fa-github-square"></i>
 					</a>
