@@ -8,6 +8,7 @@
 	margin: auto;
 	padding-top: 40px;
 	font-size: 16px;
+	padding-bottom: 10px;
 
 	&__name {
 		display: flex;
@@ -31,19 +32,26 @@
 		justify-content: space-around;
 		li {
 			list-style-type: none;
+
+			.language {
+				color: $color-highlight-1;
+			}
+
 			a {
+				padding: 2px;
 				position: relative;
 				color: $color-trivial;
 				bottom: 0;
 				&.active {
-					color: $color-highlight-1;
-					border-bottom: rgb(153, 187, 226) 3px solid;
+					color: $color-highlight-3;
+					font-weight: 700;
+					border: $color-highlight-1 2px dashed;
 				}
 			}
 			&:hover {
 				cursor: pointer;
 				a {
-					transition: all 0.5s;
+					transition: all 0.3s;
 					bottom: 5px;
 				}
 			}

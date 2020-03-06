@@ -2,6 +2,8 @@ import './homePage.scss';
 import React from 'react';
 // @ts-ignore
 import Typewriter from 'typewriter-effect';
+import TypeMe, { LineBreak, Delete } from 'react-typeme';
+
 import portrat from './portrait1.jpeg'
 // import en from 'src/locales/en-US';
 import zh from 'src/locales/zh-CN';
@@ -24,18 +26,18 @@ function HomePage() {
 				</div>
 				<div className="homePage__left__bottom">
 					<div className="homePage__contacts">
-						<p>E: leonlidawn@gmail.com</p>
-						<p>T: +61 481 555 767</p>
+						<p>
+							<i className="icon far fa-envelope"></i>
+							Email: leonlidawn@gmail.com
+						</p>
+						<p><i className="fas fa-mobile-alt"></i>
+							Mobile: +61 481 555 767
+						</p>
 					</div>
 					<div className="homePage__banner">
-						<Typewriter
-							options={{
-								strings: myFormat('home.banner.array'),
-								delay: 45,
-								autoStart: true,
-								loop: true,
-								cursor: '',
-							}}
+						<TypeMe strings={myFormat('home.banner.array')} loop='true'
+							backspaceDelay='600'
+							typingSpeed='300'
 						/>
 					</div>
 				</div>

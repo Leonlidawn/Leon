@@ -1,15 +1,20 @@
+import { Delete } from 'react-typeme';
+import React from 'react';
 export default {
 	'name.first': 'leon',
 	'name.second': 'li',
 	'menu.home': '首页',
 	'menu.resume': '简历',
 	'menu.works': '作品',
-	'menu.contacts': '联系方式',
+	'menu.language': '中文',
 	'home.banner.array':
 		[
 			'我写优质的网站',
+			<Delete characters={6} />,
 			'擅长MERN技术栈',
-			'找出问题，解决问题',
+			<Delete characters={9} />,
+			'发现问题，也解决问题',
+			< Delete characters={10} />
 		]
 	,
 	'introduction':
@@ -24,4 +29,6 @@ export default {
 			'工具: Git, GitHub, NPM, BitBucket, JIRA',
 			'协作模式: Agile / Scrum / Kanban',
 		],
+	'contact.email': '邮箱',
+	'contact.mobile': '手机'
 };

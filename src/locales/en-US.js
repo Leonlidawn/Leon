@@ -1,16 +1,23 @@
+import { Delete } from 'react-typeme';
+import React from 'react';
+
 export default {
 	'name.first': 'leon',
 	'name.second': 'li',
 	'menu.home': 'home',
 	'menu.resume': 'resume',
 	'menu.works': 'works',
-	'menu.contacts': 'contacts',
+	'menu.language': '英文',
 	'home.banner.array':
 		[
 			'I code cool websites',
-			'I love MERN stack',
-			'I spot problems',
-			'I solve problems'
+			<Delete characters={18} />,
+			'love MERN stack',
+			<Delete characters={15} />,
+			'spot problems',
+			<Delete characters={12} />,
+			'olve problems',
+			< Delete characters={13} />
 		]
 	,
 	'introduction':
@@ -29,4 +36,6 @@ I am an excellent team player in Agile/Scrum teams. I believe efficient and resp
 			'Tooling: Git, GitHub, NPM, BitBucket, JIRA',
 			'Methodologies: Agile / Scrum / Kanban',
 		],
+	'contact.email': 'email',
+	'contact.mobile': 'mobile'
 };
