@@ -1,0 +1,18 @@
+#aws buildspec
+version.: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    pre_build:
+      commands:
+        - echo Installing sourse NPM dependencies
+        - npm install
+    build:
+      commands:
+        - echo Compiling the Node.js code, but there is no test code yet
+        - npm run build
+    post_build:
+      commands:
+        - echo Build completed on `date`
