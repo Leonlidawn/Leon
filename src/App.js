@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import NavBar from './components/navBar/NavBar';
-import HomePage from './pages/homePage/HomePage';
+import Home from './pages/home/Home';
 import Works from './pages/works/Works';
 import Resume from './pages/resume/Resume';
 import Contacts from './pages/contacts/Contacts';
@@ -26,9 +26,9 @@ class App extends React.Component {
 				<main>
 					<Route>
 						<Switch>
-							<Route path='/'
+							<Route exact path='/'
 								component={() =>
-									<HomePage
+									<Home
 										format={myFormat}
 									/>}
 							/>

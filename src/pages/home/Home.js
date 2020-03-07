@@ -2,7 +2,7 @@ import './home.scss';
 import React from 'react';
 import TypeMe from 'react-typeme';
 import portrait from './portrait1.jpeg'
-import './node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import { observer } from 'mobx-react';
 
 

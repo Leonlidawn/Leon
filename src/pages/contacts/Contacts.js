@@ -5,7 +5,7 @@ import { LANGUAGE } from 'src/constants/language';
 
 function Contacts() {
 	return (
-		<div className="homePage">
+		<div className="home">
 			{/* left side */}
 			<div>
 				{/* up  */}

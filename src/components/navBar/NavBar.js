@@ -23,8 +23,6 @@ class NavBar extends React.Component {
 
 	render() {
 		let format = this.props.format;
-		let oState = this.props.oState;
-
 		return (
 
 			<nav className='navigation-bar' >

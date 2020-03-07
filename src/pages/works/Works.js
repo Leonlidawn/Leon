@@ -1,11 +1,10 @@
 import './works.scss';
 import React from 'react';
-import zh from 'src/locales/zh-CN';
-import { LANGUAGE } from 'src/constants/language';
+import { observer } from 'mobx-react';
 
 function Works() {
 	return (
-		<div className="homePage">
+		<div className="works">
 			{/* left side */}
 			<div>
 				{/* up  */}
@@ -27,4 +26,4 @@ function Works() {
 		</div>
 	)
 }
-export default Works;
+export default observer(Works);
