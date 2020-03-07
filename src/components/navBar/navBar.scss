@@ -1,15 +1,16 @@
 @import "src/styles/variables";
 
 .navigation-bar {
+	position: fixed;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 90%;
+	width: 100%;
+	padding: 0 5%;
 	margin: auto;
 	padding-top: 30px;
 	font-size: 16px;
 	padding-bottom: 10px;
-
 	&__name {
 		display: flex;
 		flex-grow: 3;
@@ -26,7 +27,6 @@
 		&__second {
 			font-size: 20px;
 			font-family: "Permanent Marker", cursive;
-			// color: $color-highlight-1;
 		}
 	}
 
@@ -78,7 +78,6 @@
 	}
 
 	&__side-bar {
-		background-color: transparent;
 		display: flex;
 		&.hide {
 			display: none;

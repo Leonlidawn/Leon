@@ -21,3 +21,15 @@ export function format(language, id) {
 	if (!text) text = id
 	return text;
 }
+
+export function copyToClipboard(id) {
+	const text = document.getElementById(id);
+	const selection = window.getSelection();
+	const range = document.createRange();
+	range.selectNodeContents(text);
+	selection.removeAllRanges();
+	selection.addRange(range);
+	document.execCommand('copy');
+	// console.log();
+	// alert(`copied:${text.textContent}`)
+}

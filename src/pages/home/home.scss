@@ -5,7 +5,7 @@
 	height: 100%;
 	background: rgb(236, 231, 204);
 	background: linear-gradient(328deg, rgba(255, 254, 248, 1) 62%, rgba(236, 231, 204, 1) 0%);
-
+	margin-top: 60px;
 	flex-grow: 1;
 	&__left {
 		flex-grow: 9;
@@ -66,6 +66,13 @@
 		font-size: 14px;
 		-webkit-font-smoothing: antialiased;
 		color: $color-trivial;
+		&__contact {
+			margin-top: 5px;
+			cursor: pointer;
+			i {
+				font-size: 10px;
+			}
+		}
 	}
 	&__social {
 		display: flex;
