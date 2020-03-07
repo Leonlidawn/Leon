@@ -7,7 +7,7 @@ import Resume from './pages/resume/Resume';
 import Contacts from './pages/contacts/Contacts';
 import { LANGUAGE } from './constants/language';
 import './App.scss';
-import { observable, computed } from 'mobx';
+import { observable } from 'mobx';
 import { observer } from 'mobx-react';
 import { format } from 'src/util';
 const oState = observable({
@@ -30,7 +30,6 @@ class App extends React.Component {
 								component={() =>
 									<HomePage
 										format={myFormat}
-										language={oState.language}
 									/>}
 							/>
 							<Route path='/works'

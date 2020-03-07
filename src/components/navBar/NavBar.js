@@ -12,22 +12,14 @@ class NavBar extends React.Component {
 		super();
 	}
 
-
-
-	languageMenu = () => (
-		<ul>
-			{Object.values(LANGUAGE).map(
-				(value) => (
-					<li>
-						<button onClick={() => this.props.oState.language = value}>
-							{value}
-						</button>
-					</li>
-				)
-			)
-			}
-		</ul>
-	)
+	toggleLanguageMenu = () => {
+		const menu = document.querySelector('.navigation-bar__language__menu');
+		if (menu.classList.contains("display-none")) {
+			menu.classList.remove("display-none");
+		} else {
+			menu.classList.add("display-none");
+		}
+	}
 
 	render() {
 		let format = this.props.format;
@@ -43,9 +35,6 @@ class NavBar extends React.Component {
 					<div className='navigation-bar__name__second'>{format('name.second')}</div>
 				</div>
 				<ul className="navigation-bar__top-bar">
-					<li>
-						{this.languageMenu()}
-					</li>
 					<li>
 						<NavLink exact to="/">
 							<i className="icon fas fa-home"></i>
@@ -66,14 +55,22 @@ class NavBar extends React.Component {
 					</li>
 					<li>
 
-						<div className="language">
+						<div className="navigation-bar__language" onClick={this.toggleLanguageMenu}>
 							<i className="icon fas fa-globe"></i>
 							{format('menu.language')}
+							<ul className="navigation-bar__language__menu display-none">
+								{Object.values(LANGUAGE).map(
+									(value) => (
+										<li onClick={() => this.props.oState.language = value}>
+											{value}
+										</li>
+									)
+								)
+								}
+							</ul>
 						</div>
-
 					</li>
 				</ul >
-
 				<ul className="navigation-bar__side-bar hide">
 					<li><button className="navigation-bar__side-bar__menu-button "></button></li>
 					<div className="navigation-bar__side-bar__options hide">

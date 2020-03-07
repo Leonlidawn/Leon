@@ -1,8 +1,8 @@
 import { Delete } from 'react-typeme';
 import React from 'react';
 export default {
-	'name.first': 'leon',
-	'name.second': 'li',
+	'name.first': 'Leon',
+	'name.second': 'Li',
 	'menu.home': '首页',
 	'menu.resume': '简历',
 	'menu.works': '作品',

@@ -17,12 +17,14 @@
 		&__first {
 			font-family: "Permanent Marker", cursive;
 			color: $color-trivial;
+			font-size: 20px;
 			&::after {
 				content: " ";
 				white-space: pre;
 			}
 		}
 		&__second {
+			font-size: 20px;
 			font-family: "Permanent Marker", cursive;
 			// color: $color-highlight-1;
 		}
@@ -34,9 +36,24 @@
 		justify-content: space-around;
 		li {
 			list-style-type: none;
-
-			.language {
+			.navigation-bar__language {
 				color: $color-highlight-1;
+				&__menu {
+					position: absolute;
+					display: flex;
+					flex-direction: column;
+					li {
+						padding-top: 5px;
+						text-transform: capitalize;
+						color: $color-trivial;
+						&:hover {
+							color: $color-highlight-1;
+						}
+					}
+					&.display-none {
+						display: none;
+					}
+				}
 			}
 
 			a {
