@@ -21,7 +21,7 @@ export default {
 		]
 	,
 	'introduction':
-		`Hi, I am Leon. A passionate full-stack web developer who loves delivering solutions with code. 
+		`Hi, I am Leon. A passionate full-stack web developer based in sydney, Australia. 
 
 I enjoy the excitement of learning new things and always like to share knowledge with others.
 
