@@ -5,25 +5,11 @@ import { LANGUAGE } from 'src/constants/language';
 
 function Resume() {
 	return (
-		<div className="Resume">
-			{/* left side */}
-			<div>
-				{/* up  */}
-				<div className="portrait"></div>
-				<div className="intro"></div>
-
-
-				{/* down */}
-				<div>
-					<div className="contacts"></div>
-					<div className="banner"></div>
-				</div>
+		<div className="resume">
+			<div className="coming-soon">
+				coming soon...
 			</div>
 
-			{/* right side */}
-			<div className="social media">
-
-			</div>
 		</div>
 	)
 }

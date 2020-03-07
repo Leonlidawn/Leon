@@ -5,24 +5,10 @@ import { observer } from 'mobx-react';
 function Works() {
 	return (
 		<div className="works">
-			{/* left side */}
-			<div>
-				{/* up  */}
-				<div className="portrait"></div>
-				<div className="intro"></div>
-
-
-				{/* down */}
-				<div>
-					<div className="contacts"></div>
-					<div className="banner"></div>
-				</div>
+			<div className="coming-soon">
+				coming soon...
 			</div>
 
-			{/* right side */}
-			<div className="social media">
-
-			</div>
 		</div>
 	)
 }
