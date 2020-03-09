@@ -9,7 +9,11 @@ function Resume() {
 			<div className="coming-soon">
 				coming soon...
 			</div>
-
+			{/* my skills
+			==
+			work experiance
+			==
+			education */}
 		</div>
 	)
 }

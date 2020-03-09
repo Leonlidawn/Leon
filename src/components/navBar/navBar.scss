@@ -1,6 +1,7 @@
 @import "src/styles/variables";
 
 .navigation-bar {
+	z-index: 2;
 	position: fixed;
 	display: flex;
 	align-items: center;

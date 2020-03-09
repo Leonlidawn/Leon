@@ -6,7 +6,7 @@ export default {
 	'name.second': 'Li',
 	'menu.home': 'Home',
 	'menu.resume': 'Resume',
-	'menu.works': 'Works',
+	'menu.portfolio': 'Portfolio',
 	'menu.language': 'English',
 	'home.banner.array':
 		[

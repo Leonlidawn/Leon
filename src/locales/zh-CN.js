@@ -5,7 +5,7 @@ export default {
 	'name.second': 'Li',
 	'menu.home': '首页',
 	'menu.resume': '简历',
-	'menu.works': '作品',
+	'menu.portfolio': '作品',
 	'menu.language': '中文',
 	'home.banner.array':
 		[

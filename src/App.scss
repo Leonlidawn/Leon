@@ -14,4 +14,15 @@
 	.invisible {
 		visibility: hidden;
 	}
+	main {
+		display: flex;
+		flex-grow: 1;
+		margin-top: 60px;
+		position: fixed;
+		display: flex;
+		height: 100%;
+		margin-top: 60px;
+		flex-grow: 1;
+		overflow: scroll;
+	}
 }

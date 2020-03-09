@@ -27,6 +27,7 @@ class Home extends React.Component {
 			<div className='home'>
 				<AlertModal message={this.state.alertMessage} />
 				{/* left side */}
+
 				<div className='home__left'>
 					{/* up  */}
 					<div className='home__left__up'>

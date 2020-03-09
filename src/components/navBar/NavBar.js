@@ -40,9 +40,9 @@ class NavBar extends React.Component {
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/works">
+						<NavLink to="/portfolio">
 							<i className="icon fas fa-laptop-code"></i>
-							{format('menu.works')}
+							{format('menu.portfolio')}
 						</NavLink>
 					</li>
 					<li>
@@ -73,7 +73,7 @@ class NavBar extends React.Component {
 					<li><button className="navigation-bar__side-bar__menu-button "></button></li>
 					<div className="navigation-bar__side-bar__options hide">
 						<li><NavLink to="/">Home</NavLink></li>
-						<li><NavLink to="/works">Works</NavLink></li>
+						<li><NavLink to="/portfolio">Portfolio</NavLink></li>
 						<li><NavLink to="/resume">Resume</NavLink></li>
 						<li><NavLink to="/language">Language</NavLink></li>
 					</div>

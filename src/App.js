@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import NavBar from './components/navBar/NavBar';
 import Home from './pages/home/Home';
-import Works from './pages/works/Works';
+import Portfolio from './pages/portfolio/Portfolio';
 import Resume from './pages/resume/Resume';
 import Contacts from './pages/contacts/Contacts';
 import { LANGUAGE } from './constants/language';
@@ -32,9 +32,9 @@ class App extends React.Component {
 										format={myFormat}
 									/>}
 							/>
-							<Route path='/works'
+							<Route path='/portfolio'
 								component={() =>
-									<Works
+									<Portfolio
 										format={myFormat}
 									/>}
 							/>
