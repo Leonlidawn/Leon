@@ -26,36 +26,39 @@ class NavBar extends React.Component {
 		return (
 
 			<nav className='navigation-bar' >
-				<div className="navigation-bar__name">
-					<div className='navigation-bar__name__first'>
-						{format('name.first')}
+				<NavLink exact to="/">
+					<div className="navigation-bar__name">
+						<div className='navigation-bar__name__first'>
+							{format('name.first')}
+						</div>
+						<div className='navigation-bar__name__second'>{format('name.second')}</div>
 					</div>
-					<div className='navigation-bar__name__second'>{format('name.second')}</div>
-				</div>
+				</NavLink>
+
 				<ul className="navigation-bar__top-bar">
 					<li>
 						<NavLink exact to="/">
 							<i className="icon fas fa-home"></i>
-							{format('menu.home')}
+							<span>{format('menu.home')}</span>
 						</NavLink>
 					</li>
 					<li>
 						<NavLink to="/portfolio">
 							<i className="icon fas fa-laptop-code"></i>
-							{format('menu.portfolio')}
+							<span>{format('menu.portfolio')}</span>
 						</NavLink>
 					</li>
 					<li>
 						<NavLink to="/resume">
 							<i className="icon fas fa-id-badge"></i>
-							{format('menu.resume')}
+							<span>{format('menu.resume')}</span>
 						</NavLink>
 					</li>
 					<li>
 
 						<div className="navigation-bar__language" onClick={this.toggleLanguageMenu}>
 							<i className="icon fas fa-globe"></i>
-							{format('menu.language')}
+							<span>{format('menu.language')}</span>
 							<ul className="navigation-bar__language__menu display-none">
 								{Object.values(LANGUAGE).map(
 									(value) => (

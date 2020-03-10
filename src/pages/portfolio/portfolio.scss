@@ -7,6 +7,8 @@
 	flex-direction: column;
 	align-items: center;
 	.project {
+		// box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.342);
+
 		$border-commercial: rgb(239, 101, 45) 4px solid;
 		$border-personal: rgb(255, 200, 17) 4px solid;
 		border-radius: 3px;
@@ -35,9 +37,8 @@
 			margin-right: 10px;
 		}
 		&__type {
-			$color-commercial: rgba(236, 125, 81, 0.9);
-			// font-style: italic;
-			background-color: $color-commercial;
+			// box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.342);
+
 			height: 40px;
 			width: 200px;
 			display: flex;
@@ -50,10 +51,14 @@
 		}
 		&__year {
 		}
+		&--personal {
+			.project__type {
+				background-color: rgb(236, 125, 81);
+			}
+		}
 		&--commercial {
 			.project__type {
-				$color-personal: rgba(245, 211, 100, 0.95);
-				background-color: $color-personal;
+				background-color: rgb(245, 211, 100);
 			}
 		}
 		&__content {
@@ -65,12 +70,14 @@
 			}
 		}
 		&__image {
+			box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.15);
 			flex-grow: 0;
 			flex-shrink: 0;
 			width: 400px;
 			height: fit-content;
 			margin-right: 20px;
-			border: rgb(221, 210, 205) 1px solid;
+			border: 1px solid rgba(0, 0, 0, 0.125);
+			// border: rgb(221, 210, 205) 1px solid;
 			img {
 				width: 100%;
 				object-fit: cover;
