@@ -12,7 +12,7 @@
 	padding-top: 30px;
 	font-size: 16px;
 	padding-bottom: 10px;
-	border-bottom: 2px solid goldenrod;
+	border-bottom: 2px solid $color-trivial;
 
 	&__name {
 		display: flex;
@@ -42,6 +42,9 @@
 			.navigation-bar__language {
 				color: $color-trivial;
 				&__menu {
+					overflow: hidden;
+					background-color: white;
+					width: 72px;
 					position: absolute;
 					display: flex;
 					flex-direction: column;
