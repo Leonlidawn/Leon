@@ -15,7 +15,7 @@ function Portfolio() {
 
 		"JR Official Website":
 		{
-			image: imageHandy,
+			image: imageOfficial,
 			link: 'https://jiangren.com.au/',
 			description: 'An offcial website for JR Academy.',
 			type: 'Work',
