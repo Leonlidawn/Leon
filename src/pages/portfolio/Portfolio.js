@@ -45,7 +45,7 @@ function Portfolio() {
 			type: PROJECT_TYPE.COMMERCIAL,
 			role: 'Full stack developer.',
 			link: 'http://uat-learn.jiangren.com.au.s3-website-ap-southeast-2.amazonaws.com/home',
-			year: 20,
+			year: 2019,
 			stack: {
 				'Front-end':
 					'HTML5, CSS3, Less, JavaScript(ES6 +), React, Redux, Redux-saga, UmiJs, DvaJs, RESTful API, Swagger, Ant Design, Zeplin',
