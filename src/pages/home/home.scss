@@ -2,16 +2,16 @@
 .home {
 	background: rgb(243, 243, 241);
 	display: flex;
+	overflow: scroll;
+	position: relative;
 	&__left {
 		&::before {
-			// z-index: -1;
-			// opacity: 95%;
 			content: "";
 			position: absolute;
 			width: 100%;
 			height: 100%;
 			background-image: url("../../images/backgrounds/moving-code.gif");
-			clip-path: polygon(0 0, 70% 0, 0 600px);
+			clip-path: polygon(0 0, 70% 0, 0 70%);
 		}
 		margin-right: 50px;
 		flex-grow: 9;

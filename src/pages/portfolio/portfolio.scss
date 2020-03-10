@@ -1,11 +1,14 @@
 .portfolio {
+	padding-bottom: 30px;
 	display: flex;
 	width: 100vw;
+	height: 100%;
+	overflow: scroll;
 	flex-direction: column;
 	align-items: center;
 	.project {
 		$border-commercial: rgb(239, 101, 45) 4px solid;
-		$border-personal: rgb(255, 212, 76) 4px solid;
+		$border-personal: rgb(255, 200, 17) 4px solid;
 		border-radius: 3px;
 		position: relative;
 		margin-top: 60px;
@@ -54,7 +57,7 @@
 			}
 		}
 		&__content {
-			padding: 20px 25px 5px 25px;
+			padding: 20px 25px 25px 25px;
 			display: flex;
 			&__left {
 				display: flex;
@@ -62,14 +65,47 @@
 			}
 		}
 		&__image {
-			min-width: 400px;
-			max-height: 300px;
-			min-height: 300px;
+			flex-grow: 0;
+			flex-shrink: 0;
+			width: 400px;
+			height: fit-content;
+			margin-right: 20px;
+			border: rgb(221, 210, 205) 1px solid;
+			img {
+				width: 100%;
+				object-fit: cover;
+			}
 		}
 
 		&__description {
+			margin-bottom: 15px;
+			&__title {
+				font-family: sans-serif;
+				font-weight: bold;
+				margin-bottom: 5px;
+			}
 		}
 		&__stack {
+			&__title {
+				font-family: sans-serif;
+				font-weight: bold;
+				margin-bottom: 2px;
+			}
+			.skill-set {
+				margin-bottom: 5px;
+				padding: 3px;
+				border-bottom: 3px solid rgba(226, 172, 23, 0.212);
+				&__name {
+					// color: rgb(148, 145, 145);
+					font-size: 14px;
+					display: inline;
+					&:after {
+						content: ": ";
+					}
+				}
+				&__detail {
+				}
+			}
 		}
 	}
 }

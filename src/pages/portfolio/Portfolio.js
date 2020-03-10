@@ -2,6 +2,12 @@ import './portfolio.scss';
 import React from 'react';
 import { observer } from 'mobx-react';
 import { PROJECT_TYPE } from 'src/constants/portfolio';
+import imageHandy from 'src/images/portfolios/screenshot-handy-hero.png';
+import imageDashboard from 'src/images/portfolios/screenshot-JR-Dashedboard.png';
+import imageOfficial from 'src/images/portfolios/screenshot-JR-official-site.png';
+import imageLeon from 'src/images/portfolios/screenshot-Leon-blog.png';
+import imageMath from 'src/images/portfolios/screenshot-math.png';
+import imageWeather from 'src/images/portfolios/screenshot-weather.png';
 
 function Portfolio() {
 
@@ -9,7 +15,7 @@ function Portfolio() {
 
 		"JR Official Website":
 		{
-			image: '',
+			image: imageHandy,
 			link: 'https://jiangren.com.au/',
 			description: 'An offcial website for JR Academy.',
 			type: 'Work',
@@ -18,7 +24,7 @@ function Portfolio() {
 			year: 2019,
 			stack: {//stacks involved 
 				'Front-end':
-					'HTML5, CSS3, Sass, JavaScript(ES6 +),React, Redux, Redux-saga, RESTful API, Swagger, Pug, Bootstrap, Zeplin',
+					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-saga, RESTful API, Swagger, Pug, Bootstrap, Zeplin',
 				'Back-end':
 					'Node.js, KeystoneJS',
 				'Testing':
@@ -33,16 +39,16 @@ function Portfolio() {
 		},
 		"JR Dashboard":
 		{
-			image: '',
+			image: imageDashboard,
 			description: `An online application of JR Academy which provides learning management to its students, teacher and tutors.`,
 			type: 'Work',
 			type: PROJECT_TYPE.COMMERCIAL,
 			role: 'Full stack developer.',
 			link: 'http://uat-learn.jiangren.com.au.s3-website-ap-southeast-2.amazonaws.com/home',
-			year: 2019,
+			year: 20,
 			stack: {
 				'Front-end':
-					'HTML5, CSS3, Less, JavaScript(ES6 +),React, Redux, Redux-saga, UmiJs, DvaJs, RESTful API, Swagger, Ant Design, Zeplin',
+					'HTML5, CSS3, Less, JavaScript(ES6 +), React, Redux, Redux-saga, UmiJs, DvaJs, RESTful API, Swagger, Ant Design, Zeplin',
 				'Back-end':
 					'Node.js, KeystoneJS',
 				'Database':
@@ -55,7 +61,7 @@ function Portfolio() {
 		},
 		"Leon's blog ":
 		{
-			image: '',
+			image: imageLeon,
 			link: 'www.leonlidawn.com',
 			description: `It is this website we are looking at right now. 
 			Here is a place where I will share my portfolios and resume.
@@ -79,7 +85,7 @@ function Portfolio() {
 		},
 		"Weather Forecast":
 		{
-			image: '',
+			image: imageWeather,
 			link: 'http://167.71.210.90/',
 			description: 'A responsive weather forecast app, based on a free forecast data api provided by openweathermap. Weather Data is cached for at most 1 hour on the server.',
 			repository: 'https://github.com/Leonlidawn/weather-app',
@@ -87,7 +93,7 @@ function Portfolio() {
 			year: 2019,
 			stack: {
 				'Front-end':
-					'HTML5, CSS3, Sass, JavaScript(ES6 +),React, Redux, Redux-thunk, RESTful API',
+					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-thunk, RESTful API',
 				'Back-end':
 					'Node.js, Express.js',
 				'Testing':
@@ -100,14 +106,14 @@ function Portfolio() {
 		},
 		"Handy Hero":
 		{
-			image: '',
+			image: imageHandy,
 			link: 'http://206.189.86.20/',
 			description: 'A website built by a team of 3 for fun and practice purposes, inspired by Airtasker. I am the leader of this team and have designed and implemented the overall structure of this website. It is still under development and will be updated from time to time.',
 			year: 2019,
 			type: PROJECT_TYPE.PERSONAL,
 			stack: {
 				'Front-end':
-					'HTML5, CSS3, Sass, JavaScript(ES6 +),React, Redux, Redux-thunk, RESTful API, JWT',
+					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-thunk, RESTful API, JWT',
 				'Back-end':
 					'Node.js, Express.js',
 				'Database':
@@ -122,9 +128,8 @@ function Portfolio() {
 		},
 		"The Mathematics Institution":
 		{
-			image: '',
-			link: 'http://104.248.154.153/',
-			description: 'A responsive website for Longhurst Mathematics Coaching College. This is a beta version of the former official website, developed in 2018 and later it was taken down due to the owner would like to switch another domain. This website provides both content management and display.',
+			image: imageMath,
+			description: 'A responsive website for Longhurst Mathematics Coaching College. This website is developed in 2018 and was later taken down due to switching to another host service provider. This website provides both content management and display.',
 			role: 'Full-stack developer',
 			type: PROJECT_TYPE.COMMERCIAL,
 			year: 2018,
@@ -158,7 +163,7 @@ function Portfolio() {
 								<div className="project__header">
 									<div>
 										<span className="project__name">{name}</span>
-										<a className="project__link" href={details.link} target='_blank'>(click to open)</a>
+										{details.link && <a className="project__link" href={details.link} target='_blank'>(click to open)</a>}
 									</div>
 									<div className="project__type">{details.type}</div>
 									<div className="project__year">year:{details.year}</div>
@@ -166,12 +171,18 @@ function Portfolio() {
 								</div>
 								<div className="project__content">
 									<div className="project__image">
-										project image here
+										<img src={details.image} />
 									</div>
 									<div className="project__content_left">
-										<div className="project__description">Description: <p>{details.description}</p></div>
+										<div className="project__description">
+											<div className="project__description__title">
+												Description
+												</div>
+											<p>{details.description}</p></div>
 										<div className="project__stack">
-											Tech-stack I have used:
+											<div className="project__stack__title">
+												Tech-stack I have used:
+											</div>
 											{
 												Object.entries(details.stack).map(
 													(entry) => {
@@ -182,7 +193,7 @@ function Portfolio() {
 																<div className="skill-set__name">
 																	{name}
 																</div>
-																<div className="skillset__detail">{skills}</div>
+																<span className="skillset__detail">{skills}</span>
 															</div>
 														)
 													}
