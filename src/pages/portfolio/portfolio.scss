@@ -4,21 +4,54 @@
 	flex-direction: column;
 	align-items: center;
 	.project {
-		margin-top: 30px;
-		border: rgb(238, 213, 167) 3px solid;
+		$border-commercial: rgb(239, 101, 45) 4px solid;
+		$border-personal: rgb(255, 212, 76) 4px solid;
+		border-radius: 3px;
+		position: relative;
+		margin-top: 60px;
 		width: 80%;
 		max-width: 1000px;
 		display: flex;
 		flex-direction: column;
+		border: $border-personal;
+		&--commercial {
+			border: $border-commercial;
+		}
 		&__header {
 			padding: 20px 25px 5px 25px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			border-bottom: rgb(238, 213, 167) 3px solid;
+			border-bottom: inherit;
 		}
+
 		&__name {
-			font-size: 30px;
+			font-size: 35px;
+			font-weight: 900;
+			display: inline;
+			margin-right: 10px;
+		}
+		&__type {
+			$color-commercial: rgba(236, 125, 81, 0.9);
+			// font-style: italic;
+			background-color: $color-commercial;
+			height: 40px;
+			width: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: -20px;
+			right: -20px;
+			border-radius: 3px;
+		}
+		&__year {
+		}
+		&--commercial {
+			.project__type {
+				$color-personal: rgba(245, 211, 100, 0.95);
+				background-color: $color-personal;
+			}
 		}
 		&__content {
 			padding: 20px 25px 5px 25px;
@@ -33,6 +66,7 @@
 			max-height: 300px;
 			min-height: 300px;
 		}
+
 		&__description {
 		}
 		&__stack {

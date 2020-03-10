@@ -15,7 +15,7 @@ function Portfolio() {
 			type: 'Work',
 			type: PROJECT_TYPE.COMMERCIAL,
 			role: 'Full stack developer',
-			year: 2020,
+			year: 2019,
 			stack: {//stacks involved 
 				'Front-end':
 					'HTML5, CSS3, Sass, JavaScript(ES6 +),React, Redux, Redux-saga, RESTful API, Swagger, Pug, Bootstrap, Zeplin',
@@ -39,7 +39,7 @@ function Portfolio() {
 			type: PROJECT_TYPE.COMMERCIAL,
 			role: 'Full stack developer.',
 			link: 'http://uat-learn.jiangren.com.au.s3-website-ap-southeast-2.amazonaws.com/home',
-			year: 2020,
+			year: 2019,
 			stack: {
 				'Front-end':
 					'HTML5, CSS3, Less, JavaScript(ES6 +),React, Redux, Redux-saga, UmiJs, DvaJs, RESTful API, Swagger, Ant Design, Zeplin',
@@ -160,7 +160,9 @@ function Portfolio() {
 										<span className="project__name">{name}</span>
 										<a className="project__link" href={details.link} target='_blank'>(click to open)</a>
 									</div>
-									<div className="project__year">{details.type}</div>
+									<div className="project__type">{details.type}</div>
+									<div className="project__year">year:{details.year}</div>
+
 								</div>
 								<div className="project__content">
 									<div className="project__image">
