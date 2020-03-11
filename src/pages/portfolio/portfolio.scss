@@ -6,6 +6,7 @@
 	overflow: scroll;
 	flex-direction: column;
 	align-items: center;
+
 	.project {
 		// box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.342);
 
@@ -23,11 +24,14 @@
 			border: $border-commercial;
 		}
 		&__header {
+			flex-wrap: wrap;
 			padding: 20px 25px 5px 25px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			// border-bottom: inherit;
+			@media only screen and (max-width: 800px) {
+				padding-top: 23px;
+			}
 		}
 
 		&__name {
@@ -37,8 +41,7 @@
 			margin-right: 10px;
 		}
 		&__type {
-			// box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.342);
-
+			transition: all 0.2s linear;
 			height: 40px;
 			width: 200px;
 			display: flex;
@@ -48,8 +51,24 @@
 			top: -20px;
 			right: -20px;
 			border-radius: 3px;
+			@media only screen and (max-width: 800px) {
+				font-size: 14px;
+				width: 160px;
+				transform: rotate(20deg);
+				top: -20px;
+				right: -47px;
+			}
+		}
+		&__link {
+			margin-left: 5px;
+			font-size: 20px;
+			position: relative;
+			top: -12px;
 		}
 		&__year {
+			@media only screen and (max-width: 800px) {
+				min-width: 100%;
+			}
 		}
 		&--personal {
 			.project__type {
@@ -64,16 +83,26 @@
 		&__content {
 			padding: 20px 25px 25px 25px;
 			display: flex;
+			@media only screen and (max-width: 1000px) {
+				flex-wrap: wrap;
+			}
 			&__left {
 				display: flex;
 				flex-direction: column;
+				flex-grow: 5;
+				flex-basis: 340px;
+				flex-shrink: 0;
+				@media only screen and (max-width: 1000px) {
+					margin-top: 20px;
+				}
 			}
 		}
 		&__image {
 			box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.15);
-			flex-grow: 0;
+			flex-grow: 3;
+			flex-basis: 340px;
 			flex-shrink: 0;
-			width: 400px;
+			// width: 30%;
 			height: fit-content;
 			margin-right: 20px;
 			border: 1px solid rgba(0, 0, 0, 0.125);
@@ -85,6 +114,14 @@
 		}
 
 		&__description {
+			margin-bottom: 15px;
+			&__title {
+				font-family: sans-serif;
+				font-weight: bold;
+				margin-bottom: 5px;
+			}
+		}
+		&__role {
 			margin-bottom: 15px;
 			&__title {
 				font-family: sans-serif;

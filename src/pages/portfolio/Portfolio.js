@@ -27,8 +27,6 @@ function Portfolio() {
 					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-saga, RESTful API, Swagger, Pug, Bootstrap, Zeplin',
 				'Back-end':
 					'Node.js, KeystoneJS',
-				'Testing':
-					'Jest',
 				'Database':
 					'MongoDB',
 				'Tooling':
@@ -96,8 +94,6 @@ function Portfolio() {
 					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-thunk, RESTful API',
 				'Back-end':
 					'Node.js, Express.js',
-				'Testing':
-					'Jest',
 				'DevOps':
 					'PM2, Digital Ocean',
 				'Tooling':
@@ -116,6 +112,8 @@ function Portfolio() {
 					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-thunk, RESTful API, JWT',
 				'Back-end':
 					'Node.js, Express.js',
+				'Testing':
+					'Jest',
 				'Database':
 					'MongoDB Atlas',
 				'DevOps':
@@ -161,9 +159,14 @@ function Portfolio() {
 						return (
 							<div className={details.type === PROJECT_TYPE.COMMERCIAL ? "project project--commercial" : "project project--personal"}>
 								<div className="project__header">
-									<div>
-										<span className="project__name">{name}</span>
-										{details.link && <a className="project__link" href={details.link} target='_blank'>(click to open)</a>}
+									<div className="project__header__left">
+										<span className="project__name">
+											{name}
+											{details.link &&
+												<a className="project__link" href={details.link} target='_blank'>
+													<i class="fas fa-external-link-alt"></i>
+												</a>}
+										</span>
 									</div>
 									<div className="project__type">{details.type}</div>
 									<div className="project__year">year:{details.year}</div>
@@ -173,15 +176,21 @@ function Portfolio() {
 									<div className="project__image">
 										<img src={details.image} />
 									</div>
-									<div className="project__content_left">
+									<div className="project__content__left">
 										<div className="project__description">
 											<div className="project__description__title">
 												Description
 												</div>
 											<p>{details.description}</p></div>
+										{details.type === PROJECT_TYPE.COMMERCIAL && (<div className="project__role">
+											<div className="project__role__title">
+												My role
+											</div>
+											{details.role}
+										</div>)}
 										<div className="project__stack">
 											<div className="project__stack__title">
-												Tech-stack I have used:
+												Tech-stack I have used
 											</div>
 											{
 												Object.entries(details.stack).map(
