@@ -10,9 +10,9 @@
 	margin: auto;
 	padding: 30px 5% 10px 5%;
 	font-size: 16px;
-	border-bottom: 2px solid $color-trivial;
+	border-bottom: 2px solid rgba(126, 76, 29, 0.411);
+	background-color: white;
 	@media only screen and (max-width: 800px) {
-		border-bottom: none;
 		padding-left: 0;
 		padding-right: 0;
 	}

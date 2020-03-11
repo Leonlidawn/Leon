@@ -61,10 +61,8 @@ function Portfolio() {
 		{
 			image: imageLeon,
 			link: 'www.leonlidawn.com',
-			description: `It is this website we are looking at right now. 
-			Here is a place where I will share my portfolios and resume.
-			At the time of writing this I have just implemented some every simple layouts, but I
-			will keep updating this website! - Mar 9, 2020
+			description: `It is this responsive website we are on. 
+			Here is a place where I will share my portfolios and resume. 
 			`,
 			type: PROJECT_TYPE.PERSONAL,
 			year: 2020,
