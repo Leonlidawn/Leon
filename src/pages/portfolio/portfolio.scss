@@ -109,34 +109,25 @@
 				padding: 10px 15px 15px 15px;
 			}
 			&__left {
+				padding: 0 1px;
 				display: flex;
 				flex-direction: column;
 				flex-grow: 5;
-				flex-basis: 340px;
+				flex-basis: 300px;
 				flex-shrink: 0;
-				@media only screen and (max-width: 800px) {
-					flex-basis: 300px;
-					margin-top: 20px;
-				}
 			}
 		}
 		&__image {
 			box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.15);
 			flex-grow: 3;
-			flex-basis: 340px;
+			flex-basis: 300px;
 			flex-shrink: 0;
 			height: fit-content;
 			margin-right: 20px;
 			border: 1px solid rgba(0, 0, 0, 0.125);
-			@media only screen and (max-width: 1000px) {
-				flex-basis: 300px;
-			}
+			margin-bottom: 20px;
 			@media only screen and (max-width: 800px) {
 				margin-right: 0;
-				// flex-basis: 300px;
-			}
-			@media only screen and (max-width: 510px) {
-				flex-basis: 300px;
 			}
 			img {
 				width: 100%;
