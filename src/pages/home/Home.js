@@ -65,6 +65,9 @@ class Home extends React.Component {
 						<a className='home__social__icon' target='_blank' href='https://github.com/Leonlidawn'>
 							<i className='icon fab fa-github-square'></i>
 						</a>
+						<a className='home__social__icon' target='_blank' href='https://www.instagram.com/leonlidawn/'>
+							<i className='icon fab fa-instagram-square'></i>
+						</a>
 					</div>
 				</div>
 			</div>

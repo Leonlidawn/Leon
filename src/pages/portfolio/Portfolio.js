@@ -104,7 +104,7 @@ function Portfolio() {
 		{
 			image: imageHandy,
 			link: 'http://206.189.86.20/',
-			description: 'A website built by a team of 3 for fun and practice purposes, inspired by Airtasker. I am the leader of this team and have designed and implemented the overall structure of this website. It is still under development and will be updated from time to time.',
+			description: 'A website built by a team of 3 for fun and practice purposes, inspired by Airtasker. Being the leader of this team I have designed and implemented the overall structure of this website. It is still under development and will be updated from time to time.',
 			year: 2019,
 			type: PROJECT_TYPE.PERSONAL,
 			stack: {
@@ -127,7 +127,7 @@ function Portfolio() {
 		"The Mathematics Institution":
 		{
 			image: imageMath,
-			description: 'A responsive website for Longhurst Mathematics Coaching College. This website is developed in 2018 and was later taken down due to switching to another host service provider. This website provides both content management and display.',
+			description: 'A responsive website for Longhurst Mathematics Coaching College. This website was built in 2018 and was then taken down in 2019 due to switching to another host service provider. This website provides both content management and display.',
 			role: 'Full-stack developer',
 			type: PROJECT_TYPE.COMMERCIAL,
 			year: 2018,

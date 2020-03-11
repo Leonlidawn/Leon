@@ -107,9 +107,12 @@
 		flex-grow: 3;
 		flex-basis: 100px;
 		height: 160px;
+		position: relative;
+		top: 20px;
 		@media only screen and (max-width: 800px) {
 			display: flex;
 			justify-content: center;
+			position: static;
 		}
 		.tm {
 			background: -webkit-linear-gradient(rgb(207, 205, 189), rgb(230, 228, 228));
@@ -130,13 +133,17 @@
 		flex-grow: 1;
 		flex-basis: 100px;
 		align-items: flex-start;
-		padding-left: 5%;
-		font-size: 14px;
+		padding-left: 4%;
+		font-size: 15px;
+		white-space: nowrap;
 		-webkit-font-smoothing: antialiased;
 		color: $color-trivial;
 		&__contact {
 			margin-top: 5px;
 			cursor: pointer;
+			@media only screen and (max-width: 800px) {
+				color: white;
+			}
 			i {
 				font-size: 10px;
 			}
@@ -191,10 +198,10 @@
 			@media only screen and (max-width: 800px) {
 				margin-top: 0;
 				transform: unset;
-				margin: 0 6px;
+				margin: 0 10px;
 			}
 			i {
-				font-size: 22px;
+				font-size: 25px;
 
 				&.fa-github-square {
 					color: #333;
@@ -204,6 +211,9 @@
 				}
 				&.fa-linkedin {
 					color: #0077b5;
+				}
+				&.fa-instagram-square {
+					color: #c13584;
 				}
 			}
 		}
