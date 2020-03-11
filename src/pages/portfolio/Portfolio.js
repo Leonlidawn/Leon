@@ -24,13 +24,13 @@ function Portfolio() {
 			year: 2019,
 			stack: {//stacks involved 
 				'Front-end':
-					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-saga, RESTful API, Swagger, Pug, Bootstrap, Zeplin',
+					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-saga, RESTful API, Swagger, Pug, Bootstrap',
 				'Back-end':
 					'Node.js, KeystoneJS',
 				'Database':
 					'MongoDB',
 				'Tooling':
-					'Git, NPM, BitBucket, JIRA, Postman',
+					'Git, NPM, BitBucket, JIRA, Postman, Zeplin',
 				'Methodologies':
 					'Agile/Scrum/Kanban, CI/CD'
 			}
@@ -202,7 +202,7 @@ function Portfolio() {
 																<div className="skill-set__name">
 																	{name}
 																</div>
-																<span className="skillset__detail">{skills}</span>
+																<span className="skill-set__detail">{skills}</span>
 															</div>
 														)
 													}
