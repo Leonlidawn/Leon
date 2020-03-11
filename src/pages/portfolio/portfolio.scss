@@ -35,6 +35,9 @@
 			@media only screen and (max-width: 800px) {
 				padding-top: 23px;
 			}
+			@media only screen and (max-width: 500px) {
+				padding: 23px 15px 5px 15px;
+			}
 		}
 
 		&__name {
