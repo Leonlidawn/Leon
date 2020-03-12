@@ -26,3 +26,19 @@
 		transform: scale(1);
 	}
 }
+@keyframes spin3d {
+	0% {
+		position: relative;
+		transform: scale3d(1, 1, 1);
+	}
+
+	50% {
+		position: relative;
+		transform: scale3d(1, -1, 1);
+	}
+
+	100% {
+		position: relative;
+		transform: scale3d(1, 1, 1);
+	}
+}

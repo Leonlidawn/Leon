@@ -1,20 +1,4 @@
 @import "src/styles/variables";
-@keyframes spin3d {
-	0% {
-		position: relative;
-		transform: scale3d(1, 1, 1);
-	}
-
-	50% {
-		position: relative;
-		transform: scale3d(1, -1, 1);
-	}
-
-	100% {
-		position: relative;
-		transform: scale3d(1, 1, 1);
-	}
-}
 .navigation-bar {
 	z-index: 2;
 	position: fixed;
