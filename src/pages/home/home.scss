@@ -1,5 +1,7 @@
 @import "src/styles/variables";
 .home {
+	animation: emerge 0.8s;
+
 	// background: rgb(243, 243, 241);
 	display: flex;
 	overflow: scroll;

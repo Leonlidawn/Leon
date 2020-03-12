@@ -9,3 +9,20 @@
 	margin: 0;
 	padding: 0;
 }
+
+@keyframes emerge {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes grow {
+	from {
+		transform: scale(0.5);
+	}
+	to {
+		transform: scale(1);
+	}
+}
