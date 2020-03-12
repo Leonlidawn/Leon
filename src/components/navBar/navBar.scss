@@ -73,16 +73,18 @@
 			}
 			a {
 				padding: 2px;
-				@media only screen and (max-width: 800px) {
-					span {
-						font-size: 12px;
-					}
-				}
 				display: inline-block;
 				height: 100%;
 				position: relative;
 				color: $color-trivial;
 				bottom: 0;
+				//Todos: tech-dept. increase height to match active border. need make nav-bar a fix height instead.
+				border: transparent 2px dashed;
+				@media only screen and (max-width: 800px) {
+					span {
+						font-size: 12px;
+					}
+				}
 				&.active {
 					animation: spin3d 0.3s;
 					color: $color-highlight-2;
