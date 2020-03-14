@@ -24,9 +24,9 @@ function Portfolio() {
 			year: 2019,
 			stack: {//stacks involved 
 				'Front-end':
-					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-saga, RESTful API, Swagger, Pug, Bootstrap',
+					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-saga, Swagger, Pug, Bootstrap',
 				'Back-end':
-					'Node.js, KeystoneJS',
+					'Node.js, KeystoneJS, REST API',
 				'Database':
 					'MongoDB',
 				'Tooling':
@@ -46,9 +46,9 @@ function Portfolio() {
 			year: 2019,
 			stack: {
 				'Front-end':
-					'HTML5, CSS3, Less, JavaScript(ES6 +), React, Redux, Redux-saga, UmiJs, DvaJs, RESTful API, Swagger, Ant Design, Zeplin',
+					'HTML5, CSS3, Less, JavaScript(ES6 +), React, Redux, Redux-saga, UmiJs, DvaJs, Swagger, Ant Design, Zeplin',
 				'Back-end':
-					'Node.js, KeystoneJS',
+					'Node.js, KeystoneJS, REST API',
 				'Database':
 					'MongoDB',
 				'Tooling':
@@ -62,7 +62,7 @@ function Portfolio() {
 			image: imageLeon,
 			link: 'www.leonlidawn.com',
 			description: `It is this responsive website we are on. 
-			Here is a place where I will share my portfolios and resume. 
+			Here is a place where I will share my portfolio and resume. 
 			`,
 			type: PROJECT_TYPE.PERSONAL,
 			year: 2020,
@@ -89,9 +89,9 @@ function Portfolio() {
 			year: 2019,
 			stack: {
 				'Front-end':
-					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-thunk, RESTful API',
+					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-thunk',
 				'Back-end':
-					'Node.js, Express.js',
+					'Node.js, Express.js, REST API',
 				'DevOps':
 					'PM2, Digital Ocean',
 				'Tooling':
@@ -107,9 +107,9 @@ function Portfolio() {
 			type: PROJECT_TYPE.PERSONAL,
 			stack: {
 				'Front-end':
-					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-thunk, RESTful API, JWT',
+					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-thunk, REST API ',
 				'Back-end':
-					'Node.js, Express.js',
+					'Node.js, Express.js, JWT',
 				'Testing':
 					'Jest',
 				'Database':
@@ -131,9 +131,9 @@ function Portfolio() {
 			year: 2018,
 			stack: {
 				'Front-end':
-					'HTML5, CSS3, Sass, JavaScript(ES6 +), RESTful API, Bootstrap, Vue.js',
+					'HTML5, CSS3, Sass, JavaScript(ES6 +), Bootstrap, Vue.js',
 				'Back-end':
-					'Node.js, Express.js, Okta',
+					'Node.js, Express.js, REST API',
 				'Database':
 					'SQLite',
 				'DevOps':

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import './navBar.scss';
 import { LANGUAGE } from 'src/constants/language';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -49,13 +49,14 @@ class NavBar extends React.Component {
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/resume">
+						<a href="https://docs.google.com/document/d/1nmjBop7-Ab8Kf8RgIcja4das0sRBh0kYfpMOXW7DSP4/edit?usp=sharing"
+							target="_blank"
+						>
 							<i className="icon fas fa-id-badge"></i>
 							<span>{format('menu.resume')}</span>
-						</NavLink>
+						</a>
 					</li>
 					<li>
-
 						<div className="navigation-bar__language" onClick={this.toggleLanguageMenu}>
 							<i className="icon fas fa-globe"></i>
 							<span>{format('menu.language')}</span>
@@ -72,16 +73,6 @@ class NavBar extends React.Component {
 						</div>
 					</li>
 				</ul >
-				<ul className="navigation-bar__side-bar hide">
-					<li><button className="navigation-bar__side-bar__menu-button "></button></li>
-					<div className="navigation-bar__side-bar__options hide">
-						<li><NavLink to="/">Home</NavLink></li>
-						<li><NavLink to="/portfolio">Portfolio</NavLink></li>
-						<li><NavLink to="/resume">Resume</NavLink></li>
-						<li><NavLink to="/language">Language</NavLink></li>
-					</div>
-				</ul >
-
 			</nav >
 		);
 	}

@@ -101,38 +101,4 @@
 			}
 		}
 	}
-
-	&__side-bar {
-		display: flex;
-		&.hide {
-			display: none;
-		}
-		flex-direction: column;
-
-		&__menu-button {
-			cursor: pointer;
-			width: 20px;
-			height: 20px;
-			appearance: none;
-			outline: none;
-			mask-image: url("/images/icons/icon-menu.svg");
-			mask-position: center;
-			mask-size: contain;
-			mask-repeat: no-repeat;
-			mask-position: center;
-			background-color: $color-trivial;
-			background-size: 100%;
-		}
-		&__options {
-			&.hide {
-				display: none;
-			}
-		}
-		li {
-			list-style-type: none;
-			a {
-				color: $color-highlight-1;
-			}
-		}
-	}
 }
