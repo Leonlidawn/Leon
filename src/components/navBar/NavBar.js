@@ -22,6 +22,7 @@ class NavBar extends React.Component {
 	}
 
 	render() {
+		let resumeLink = "https://docs.google.com/document/d/1I-a8FblYM4sS1DvX1WwMF_UND2dU5HQmqF6r_apQmfw/edit?usp=sharing";
 		let format = this.props.format;
 		return (
 
@@ -49,7 +50,7 @@ class NavBar extends React.Component {
 						</NavLink>
 					</li>
 					<li>
-						<a href="https://docs.google.com/document/d/1nmjBop7-Ab8Kf8RgIcja4das0sRBh0kYfpMOXW7DSP4/edit?usp=sharing"
+						<a href={resumeLink}
 							target="_blank"
 						>
 							<i className="icon fas fa-id-badge"></i>
