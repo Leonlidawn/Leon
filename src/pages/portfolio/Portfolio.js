@@ -26,7 +26,7 @@ function Portfolio() {
 				'Front-end':
 					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-saga, Swagger, Pug, Bootstrap',
 				'Back-end':
-					'Node.js, KeystoneJS, REST API',
+					'Node.js, KeystoneJS, RESTful API',
 				'Database':
 					'MongoDB',
 				'Tooling':
@@ -48,7 +48,7 @@ function Portfolio() {
 				'Front-end':
 					'HTML5, CSS3, Less, JavaScript(ES6 +), React, Redux, Redux-saga, UmiJs, DvaJs, Swagger, Ant Design, Zeplin',
 				'Back-end':
-					'Node.js, KeystoneJS, REST API',
+					'Node.js, KeystoneJS, RESTful API',
 				'Database':
 					'MongoDB',
 				'Tooling':
@@ -91,7 +91,7 @@ function Portfolio() {
 				'Front-end':
 					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-thunk',
 				'Back-end':
-					'Node.js, Express.js, REST API',
+					'Node.js, Express.js, RESTful API',
 				'DevOps':
 					'PM2, Digital Ocean',
 				'Tooling':
@@ -107,7 +107,7 @@ function Portfolio() {
 			type: PROJECT_TYPE.PERSONAL,
 			stack: {
 				'Front-end':
-					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-thunk, REST API ',
+					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-thunk, RESTful API ',
 				'Back-end':
 					'Node.js, Express.js, JWT',
 				'Testing':
@@ -133,7 +133,7 @@ function Portfolio() {
 				'Front-end':
 					'HTML5, CSS3, Sass, JavaScript(ES6 +), Bootstrap, Vue.js',
 				'Back-end':
-					'Node.js, Express.js, REST API',
+					'Node.js, Express.js, RESTful API',
 				'Database':
 					'SQLite',
 				'DevOps':
