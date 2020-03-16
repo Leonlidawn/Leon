@@ -8,11 +8,8 @@
 	align-items: center;
 
 	.project {
-		// box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.342);
 		animation: emerge 0.8s;
-		// animation: grow 0.8s;
 		position: relative;
-		// animation: name duration timing-function delay 1 direction fill-mode;
 		$border-commercial: rgb(239, 101, 45) 4px solid;
 		$border-personal: rgb(255, 200, 17) 4px solid;
 		border-radius: 3px;
@@ -94,6 +91,10 @@
 			font-size: 20px;
 			position: relative;
 			top: -12px;
+			color: rgb(162, 160, 160);
+			i {
+				animation: emerge 1s;
+			}
 		}
 		&__year {
 			@media only screen and (max-width: 800px) {
