@@ -42,7 +42,7 @@ function Portfolio() {
 			type: 'Work',
 			type: PROJECT_TYPE.COMMERCIAL,
 			role: 'Full stack developer.',
-			link: 'http://uat-learn.jiangren.com.au.s3-website-ap-southeast-2.amazonaws.com/home',
+			link: 'https://learn.jiangren.com.au/home',
 			year: 2019,
 			stack: {
 				'Front-end':
