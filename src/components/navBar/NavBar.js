@@ -4,7 +4,7 @@ import './navBar.scss';
 import { LANGUAGE } from 'src/constants/language';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { observer } from 'mobx-react';
-
+import resume from './resume.pdf';
 
 class NavBar extends React.Component {
 
@@ -22,7 +22,6 @@ class NavBar extends React.Component {
 	}
 
 	render() {
-		let resumeLink = "https://docs.google.com/document/d/1I-a8FblYM4sS1DvX1WwMF_UND2dU5HQmqF6r_apQmfw/edit?usp=sharing";
 		let format = this.props.format;
 		return (
 
@@ -50,7 +49,7 @@ class NavBar extends React.Component {
 						</NavLink>
 					</li>
 					<li>
-						<a href={resumeLink}
+						<a href={resume}
 							target="_blank"
 						>
 							<i className="icon fas fa-id-badge"></i>
