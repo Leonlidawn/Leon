@@ -1,10 +1,7 @@
 @import "src/styles/variables";
 .home {
 	animation: emerge 0.8s;
-
-	// background: rgb(243, 243, 241);
 	display: flex;
-	overflow: scroll;
 	position: relative;
 	@media only screen and (max-width: 800px) {
 		flex-direction: column;
@@ -92,7 +89,7 @@
 	&__intro {
 		flex-basis: 200px;
 		flex-grow: 5;
-		margin-top: 40vh;
+		margin-top: 300px;
 		color: $color-highlight-2;
 		font-size: 20px;
 		font-weight: 300;
@@ -159,9 +156,14 @@
 		height: 80%;
 		padding-bottom: 10px;
 		position: fixed;
+		position: absolute;
+		top: 56%;
 		width: 50px;
 		right: 0;
-		top: 60%;
+		// top: 200px;
+		@media only screen and (min-height: 650px) {
+			position: fixed;
+		}
 		@media only screen and (max-width: 800px) {
 			position: absolute;
 			flex-direction: row;
@@ -180,6 +182,7 @@
 			-webkit-font-smoothing: antialiased;
 			font-size: 14px;
 			margin-bottom: 80px;
+
 			@media only screen and (max-width: 800px) {
 				display: none;
 			}
