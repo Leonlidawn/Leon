@@ -4,7 +4,7 @@ import './navBar.scss';
 import { LANGUAGE } from 'src/constants/language';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { observer } from 'mobx-react';
-import resume from './resume.pdf';
+import resume from 'src/resume.pdf';
 
 class NavBar extends React.Component {
 
