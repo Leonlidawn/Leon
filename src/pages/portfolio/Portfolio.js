@@ -17,16 +17,16 @@ function Portfolio() {
 		{
 			image: imageOfficial,
 			link: 'https://jiangren.com.au/',
-			description: 'An offcial website for JR Academy.',
+			description: 'An official website for JR Academy.',
 			type: 'Work',
 			type: PROJECT_TYPE.COMMERCIAL,
 			role: 'Full stack developer',
 			year: 2019,
 			stack: {//stacks involved 
 				'Front-end':
-					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-saga, Swagger, Pug, Bootstrap',
+					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-saga, Pug, Bootstrap',
 				'Back-end':
-					'Node.js, KeystoneJS, RESTful API',
+					'Node.js, KeystoneJS, RESTful API, Swagger',
 				'Database':
 					'MongoDB',
 				'Tooling':
@@ -46,9 +46,31 @@ function Portfolio() {
 			year: 2019,
 			stack: {
 				'Front-end':
-					'HTML5, CSS3, Less, JavaScript(ES6 +), React, Redux, Redux-saga, UmiJs, DvaJs, Swagger, Ant Design, Zeplin',
+					'HTML5, CSS3, Less, JavaScript(ES6 +), React, Redux, Redux-saga, UmiJs, DvaJs, Ant Design, Zeplin',
 				'Back-end':
-					'Node.js, KeystoneJS, RESTful API',
+					'Node.js, KeystoneJS, RESTful API, Swagger',
+				'Database':
+					'MongoDB',
+				'Tooling':
+					'Git, NPM, BitBucket, JIRA, Postman',
+				'Methodologies':
+					'Agile/Scrum/Kanban, CI/CD'
+			}
+		},
+		"JR Talent":
+		{
+			image: imageDashboard,
+			description: 'A website that helps people find jobs and career related information or recruit the ideal candidate.',
+			type: 'Work',
+			type: PROJECT_TYPE.COMMERCIAL,
+			role: 'Full stack developer.',
+			link: 'https://jrtalent.com.au/',
+			year: 2019,
+			stack: {
+				'Front-end':
+					'CSS3, Sass, HTML5, JavaScript ES6, Bootstrap',
+				'Back-end':
+					'Node.js, ExpressJS, RESTful API',
 				'Database':
 					'MongoDB',
 				'Tooling':
