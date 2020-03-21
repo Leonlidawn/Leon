@@ -84,7 +84,7 @@ function Portfolio() {
 		"Leon's blog ":
 		{
 			image: imageLeon,
-			link: 'www.leonlidawn.com',
+			link: 'http://leonlidawn.com',
 			description: `It is this responsive website we are on. 
 			Here is a place where I will share my portfolio and resume. 
 			`,
