@@ -2,12 +2,14 @@ import './portfolio.scss';
 import React from 'react';
 import { observer } from 'mobx-react';
 import { PROJECT_TYPE } from 'src/constants/portfolio';
-import imageHandy from 'src/images/portfolios/screenshot-handy-hero.png';
-import imageDashboard from 'src/images/portfolios/screenshot-JR-Dashedboard.png';
 import imageOfficial from 'src/images/portfolios/screenshot-JR-official-site.png';
+import imageDashboard from 'src/images/portfolios/screenshot-JR-dashedboard.png';
+import imageTalent from 'src/images/portfolios/screenshot-JR-talent.png';
 import imageLeon from 'src/images/portfolios/screenshot-Leon-blog.png';
-import imageMath from 'src/images/portfolios/screenshot-math.png';
 import imageWeather from 'src/images/portfolios/screenshot-weather.png';
+import imageHandy from 'src/images/portfolios/screenshot-handy-hero.png';
+import imageMath from 'src/images/portfolios/screenshot-math.png';
+
 
 function Portfolio() {
 
@@ -59,7 +61,7 @@ function Portfolio() {
 		},
 		"JR Talent":
 		{
-			image: imageDashboard,
+			image: imageTalent,
 			description: 'A website that helps people find jobs and career related information or recruit the ideal candidate.',
 			type: 'Work',
 			type: PROJECT_TYPE.COMMERCIAL,
