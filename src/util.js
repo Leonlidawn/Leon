@@ -31,3 +31,11 @@ export function copyToClipboard(id) {
 	selection.addRange(range);
 	document.execCommand('copy');
 }
+
+export function isInViewPort(element) {
+	const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+	//el.offsetTop - document.documentElement.scrollTop
+	const top = element.getBoundingClientRect().top
+	console.log('top', top, top <= viewPortHeight + 100)
+	return top <= viewPortHeight - 200
+} 

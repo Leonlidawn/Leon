@@ -9,14 +9,15 @@ import imageLeon from 'src/images/portfolios/screenshot-Leon-blog.png';
 import imageWeather from 'src/images/portfolios/screenshot-weather.png';
 import imageHandy from 'src/images/portfolios/screenshot-handy-hero.png';
 import imageMath from 'src/images/portfolios/screenshot-math.png';
+import { isInViewPort } from 'src/util';
 
+class Portfolio extends React.Component {
 
-function Portfolio() {
-
-	const works = {
+	works = {
 
 		"JR Official Website":
 		{
+			id: "jr-official",
 			image: imageOfficial,
 			link: 'https://jiangren.com.au/',
 			description: 'An official website for JR Academy.',
@@ -38,6 +39,7 @@ function Portfolio() {
 		},
 		"JR Dashboard":
 		{
+			id: "jr-dashboard",
 			image: imageDashboard,
 			description: `An online application of JR Academy which provides learning management to its students, teacher and tutors.`,
 			type: PROJECT_TYPE.COMMERCIAL,
@@ -59,6 +61,7 @@ function Portfolio() {
 		},
 		"JR Talent":
 		{
+			id: "jr-talent",
 			image: imageTalent,
 			description: 'A website that helps people find jobs and career related information or recruit the ideal candidate.',
 			type: PROJECT_TYPE.COMMERCIAL,
@@ -80,11 +83,12 @@ function Portfolio() {
 		},
 		"Leon's blog ":
 		{
+			id: "leon-blog",
 			image: imageLeon,
 			link: 'http://leonlidawn.info',
 			description: `It is this responsive website we are on. 
-			Here is a place where I will share my portfolio and resume. 
-			`,
+		Here is a place where I will share my portfolio and resume. 
+		`,
 			type: PROJECT_TYPE.PERSONAL,
 			year: 2020,
 			stack: {
@@ -102,6 +106,7 @@ function Portfolio() {
 		},
 		"Weather Forecast":
 		{
+			id: "weather-forecast",
 			image: imageWeather,
 			link: 'http://167.71.210.90/',
 			description: 'A responsive weather forecast app, based on a free forecast data api provided by openweathermap. Weather Data is cached for at most 1 hour on the server.',
@@ -121,6 +126,7 @@ function Portfolio() {
 		},
 		"Handy Hero":
 		{
+			id: "handy-hero",
 			image: imageHandy,
 			link: 'http://206.189.86.20/',
 			description: 'A website built by a team of 3 for fun and practice purposes, inspired by Airtasker. Being the leader of this team I have designed and implemented the overall structure of this website. It is still under development and will be updated from time to time.',
@@ -145,6 +151,7 @@ function Portfolio() {
 		},
 		"The Mathematics Institution":
 		{
+			id: "maths-institute",
 			image: imageMath,
 			description: 'A responsive website for Longhurst Mathematics Coaching College. This website was built in 2018 and was then taken down in 2019 due to switching to another host service provider. This website provides both content management and display.',
 			role: 'Full-stack developer',
@@ -167,77 +174,93 @@ function Portfolio() {
 		},
 	};
 
-	return (
-		<div className="portfolio">
-			{
+	activeAnimation = (element) => {
+		if (isInViewPort(element)) element.classList.add("appear");
+	}
 
-				Object.entries(works).map(
-					(entry) => {
-						const name = entry[0];
-						const details = entry[1];
-						return (
-							<div className={details.type === PROJECT_TYPE.COMMERCIAL ? "project project--commercial" : "project project--personal"}>
-								<div className="project__header">
-									<div className="project__header__left">
-										<span className="project__name">
-											{name}
-											{details.link &&
-												<a className="project__link" href={details.link} target='_blank' rel='noopener noreferrer'>
-													<i className="fas fa-external-link-alt"></i>
-												</a>}
-										</span>
-									</div>
-									<div className="project__type">{details.type}</div>
-									<div className="project__year">year:{details.year}</div>
-
-								</div>
-								<div className="project__content">
-									<div className="project__image">
-										<img src={details.image} alt='project demo' />
-									</div>
-									<div className="project__content__left">
-										<div className="project__description">
-											<div className="project__description__title">
-												Description
-												</div>
-											<p>{details.description}</p></div>
-										{details.type === PROJECT_TYPE.COMMERCIAL && (<div className="project__role">
-											<div className="project__role__title">
-												My role
-											</div>
-											{details.role}
-										</div>)}
-										<div className="project__stack">
-											<div className="project__stack__title">
-												Tech-stack I have used
-											</div>
-											{
-												Object.entries(details.stack).map(
-													(entry) => {
-														const name = entry[0];
-														const skills = entry[1];
-														return (
-															<div className="skill-set">
-																<div className="skill-set__name">
-																	{name}
-																</div>
-																<span className="skill-set__detail">{skills}</span>
-															</div>
-														)
-													}
-												)
-											}</div>
-									</div>
-								</div>
-
-
-							</div>
-						)
-					}
-				)
+	componentDidMount() {
+		Object.values(this.works).map(
+			({ id }) => {
+				const element = document.getElementById(id)
+				window.addEventListener('scroll', () => this.activeAnimation(element));
 			}
+		);
+	}
 
-		</div >
-	)
+	render() {
+
+		return (
+			<div className="portfolio">
+				{
+
+					Object.entries(this.works).map(
+						(entry) => {
+							const name = entry[0];
+							const details = entry[1];
+							return (
+								<div key={details.id} id={details.id} className={details.type === PROJECT_TYPE.COMMERCIAL ? "project project--commercial" : "project project--personal"}>
+									<div className="project__header">
+										<div className="project__header__left">
+											<span className="project__name">
+												{name}
+												{details.link &&
+													<a className="project__link" href={details.link} target='_blank' rel='noopener noreferrer'>
+														<i className="fas fa-external-link-alt"></i>
+													</a>}
+											</span>
+										</div>
+										<div className="project__type">{details.type}</div>
+										<div className="project__year">year:{details.year}</div>
+
+									</div>
+									<div className="project__content">
+										<div className="project__image">
+											<img src={details.image} alt='project demo' />
+										</div>
+										<div className="project__content__left">
+											<div className="project__description">
+												<div className="project__description__title">
+													Description
+												</div>
+												<p>{details.description}</p></div>
+											{details.type === PROJECT_TYPE.COMMERCIAL && (<div className="project__role">
+												<div className="project__role__title">
+													My role
+											</div>
+												{details.role}
+											</div>)}
+											<div className="project__stack">
+												<div className="project__stack__title">
+													Tech-stack I have used
+											</div>
+												{
+													Object.entries(details.stack).map(
+														(entry) => {
+															const name = entry[0];
+															const skills = entry[1];
+															return (
+																<div key={name} className="skill-set">
+																	<div className="skill-set__name">
+																		{name}
+																	</div>
+																	<span className="skill-set__detail">{skills}</span>
+																</div>
+															)
+														}
+													)
+												}</div>
+										</div>
+									</div>
+
+
+								</div>
+							)
+						}
+					)
+				}
+
+			</div >
+		)
+	}
 }
 export default observer(Portfolio);
