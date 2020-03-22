@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './navBar.scss';
 import { LANGUAGE } from 'src/constants/language';
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -7,10 +7,6 @@ import { observer } from 'mobx-react';
 import resume from 'src/resume.pdf';
 
 class NavBar extends React.Component {
-
-	constructor() {
-		super();
-	}
 
 	toggleLanguageMenu = () => {
 		const menu = document.querySelector('.navigation-bar__language__menu');
@@ -50,7 +46,7 @@ class NavBar extends React.Component {
 					</li>
 					<li>
 						<a href={resume}
-							target="_blank"
+							target="_blank" rel='noopener noreferrer'
 						>
 							<i className="icon fas fa-id-badge"></i>
 							<span>{format('menu.resume')}</span>
@@ -63,7 +59,7 @@ class NavBar extends React.Component {
 							<ul className="navigation-bar__language__menu display-none">
 								{Object.values(LANGUAGE).map(
 									(value) => (
-										<li onClick={() => this.props.oState.language = value}>
+										<li key={value} onClick={() => this.props.oState.language = value}>
 											{value}
 										</li>
 									)

@@ -30,6 +30,4 @@ export function copyToClipboard(id) {
 	selection.removeAllRanges();
 	selection.addRange(range);
 	document.execCommand('copy');
-	// console.log();
-	// alert(`copied:${text.textContent}`)
 }

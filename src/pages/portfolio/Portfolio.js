@@ -20,7 +20,6 @@ function Portfolio() {
 			image: imageOfficial,
 			link: 'https://jiangren.com.au/',
 			description: 'An official website for JR Academy.',
-			type: 'Work',
 			type: PROJECT_TYPE.COMMERCIAL,
 			role: 'Full stack developer',
 			year: 2019,
@@ -41,7 +40,6 @@ function Portfolio() {
 		{
 			image: imageDashboard,
 			description: `An online application of JR Academy which provides learning management to its students, teacher and tutors.`,
-			type: 'Work',
 			type: PROJECT_TYPE.COMMERCIAL,
 			role: 'Full stack developer.',
 			link: 'https://learn.jiangren.com.au/home',
@@ -63,7 +61,6 @@ function Portfolio() {
 		{
 			image: imageTalent,
 			description: 'A website that helps people find jobs and career related information or recruit the ideal candidate.',
-			type: 'Work',
 			type: PROJECT_TYPE.COMMERCIAL,
 			role: 'Full stack developer.',
 			link: 'https://jrtalent.com.au/',
@@ -185,8 +182,8 @@ function Portfolio() {
 										<span className="project__name">
 											{name}
 											{details.link &&
-												<a className="project__link" href={details.link} target='_blank'>
-													<i class="fas fa-external-link-alt"></i>
+												<a className="project__link" href={details.link} target='_blank' rel='noopener noreferrer'>
+													<i className="fas fa-external-link-alt"></i>
 												</a>}
 										</span>
 									</div>
@@ -196,7 +193,7 @@ function Portfolio() {
 								</div>
 								<div className="project__content">
 									<div className="project__image">
-										<img src={details.image} />
+										<img src={details.image} alt='project demo' />
 									</div>
 									<div className="project__content__left">
 										<div className="project__description">

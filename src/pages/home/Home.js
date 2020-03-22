@@ -32,17 +32,17 @@ class Home extends React.Component {
 					{/* up  */}
 					<div className='home__left__up'>
 						<div className='home__portrait'>
-							<img className='home__portrait__image' src={portrait} />
+							<img className='home__portrait__image' src={portrait} alt='profile' />
 						</div>
 						<div className='home__intro'>{format('introduction')}</div>
 					</div>
 					<div className='home__left__bottom'>
 						<div className='home__contacts' >
 							<p className='home__contacts__contact' onClick={() => { copyToClipboard('email'); this.changeAlertMessage('Email copied') }}>
-								<i class="far fa-clone"></i>	{format('contact.email')}:<span id='email'>leonlidawn@gmail.com</span>
+								<i className="far fa-clone"></i>	{format('contact.email')}:<span id='email'>leonlidawn@gmail.com</span>
 							</p>
 							<p className='home__contacts__contact' onClick={() => { copyToClipboard('mobile'); this.changeAlertMessage('Mobile copied') }}>
-								<i class="far fa-clone"></i>	{format('contact.mobile')}:<span id='mobile'>+61 481 555 767</span>
+								<i className="far fa-clone"></i>	{format('contact.mobile')}:<span id='mobile'>+61 481 555 767</span>
 							</p>
 						</div>
 						<div className='home__banner'>
@@ -58,14 +58,14 @@ class Home extends React.Component {
 							{format('follow-me')}
 						</span>
 
-						<a className='home__social__icon' target='_blank' href='https://www.linkedin.com/in/weidong-li-leon/'>
+						<a className='home__social__icon' target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/in/weidong-li-leon/'>
 							<i className='icon fab fa-linkedin'></i>
 						</a>
 
-						<a className='home__social__icon' target='_blank' href='https://github.com/leonlidawn'>
+						<a className='home__social__icon' target='_blank' rel='noopener noreferrer' href='https://github.com/leonlidawn'>
 							<i className='icon fab fa-github-square'></i>
 						</a>
-						<a className='home__social__icon' target='_blank' href='https://www.instagram.com/leonlidawn/'>
+						<a className='home__social__icon' target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/leonlidawn/'>
 							<i className='icon fab fa-instagram-square'></i>
 						</a>
 					</div>
