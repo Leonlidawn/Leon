@@ -32,10 +32,14 @@ export function copyToClipboard(id) {
 	document.execCommand('copy');
 }
 
-export function isInViewPort(element) {
+/**
+ * Checks if an element is above the bottom 5% of viewport.
+ * @param {Element} element the html element you are observing
+ * @return true || false
+ */
+export function isInOrAboveViewPort(element) {
 	const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
-	//el.offsetTop - document.documentElement.scrollTop
 	const top = element.getBoundingClientRect().top
-	console.log('top', top, top <= viewPortHeight + 100)
-	return top <= viewPortHeight - 200
+	console.log('top', top, top <= viewPortHeight * 0.95)
+	return top <= viewPortHeight * 0.95
 } 

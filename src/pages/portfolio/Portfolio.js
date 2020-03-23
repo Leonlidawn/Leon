@@ -9,7 +9,7 @@ import imageLeon from 'src/images/portfolios/screenshot-Leon-blog.png';
 import imageWeather from 'src/images/portfolios/screenshot-weather.png';
 import imageHandy from 'src/images/portfolios/screenshot-handy-hero.png';
 import imageMath from 'src/images/portfolios/screenshot-math.png';
-import { isInViewPort } from 'src/util';
+import { isInOrAboveViewPort } from 'src/util';
 
 class Portfolio extends React.Component {
 
@@ -175,7 +175,7 @@ class Portfolio extends React.Component {
 	};
 
 	activeAnimation = (element) => {
-		if (isInViewPort(element)) element.classList.add("appear");
+		if (isInOrAboveViewPort(element)) element.classList.add("appear");
 	}
 
 	componentDidMount() {
