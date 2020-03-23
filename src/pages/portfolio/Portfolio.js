@@ -182,7 +182,9 @@ class Portfolio extends React.Component {
 		Object.values(this.works).map(
 			({ id }) => {
 				const element = document.getElementById(id)
+				this.activeAnimation(element);
 				window.addEventListener('scroll', () => this.activeAnimation(element));
+				window.addEventListener('resize', () => this.activeAnimation(element));
 			}
 		);
 	}

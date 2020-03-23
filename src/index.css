@@ -42,3 +42,31 @@
 		transform: scale3d(1, 1, 1);
 	}
 }
+@keyframes slide-from-right {
+	0% {
+		opacity: 0;
+		position: relative;
+		right: -300px;
+	}
+	80% {
+		opacity: 0.5;
+		position: relative;
+		right: -60px;
+	}
+	100% {
+		opacity: 1;
+		position: relative;
+		right: 0px;
+	}
+}
+@keyframes backgound-roll-up {
+	0% {
+		background-position: 0px 200px;
+		opacity: 0;
+	}
+
+	100% {
+		background-position: 0px 0px;
+		opacity: 1;
+	}
+}
