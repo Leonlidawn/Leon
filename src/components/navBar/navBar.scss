@@ -9,7 +9,7 @@
 	margin: auto;
 	padding: 30px 5% 10px 5%;
 	font-size: 16px;
-	border-bottom: 2px solid rgba(126, 76, 29, 0.411);
+	border-bottom: 2px solid $color-trivial-2;
 	background-color: white;
 	@media only screen and (max-width: 800px) {
 		padding-left: 0;
@@ -41,10 +41,11 @@
 		display: flex;
 		flex-grow: 1;
 		justify-content: space-around;
-
+		align-items: center;
 		li {
 			list-style-type: none;
 			.navigation-bar__language {
+				padding: 4px;
 				color: $color-trivial;
 				@media only screen and (max-width: 800px) {
 					span {
@@ -52,8 +53,13 @@
 					}
 				}
 				&__menu {
-					overflow: hidden;
-					background-color: white;
+					margin-top: 14px;
+					padding-left: 4px;
+					padding-bottom: 4px;
+					border: 2px $color-trivial-2 solid;
+					border-top: none;
+					background-color: rgb(255, 255, 255);
+
 					width: 72px;
 					position: absolute;
 					display: flex;
@@ -72,14 +78,12 @@
 				}
 			}
 			a {
-				padding: 2px;
+				padding: 4px;
 				display: inline-block;
 				height: 100%;
 				position: relative;
 				color: $color-trivial;
 				bottom: 0;
-				//Todos: tech-dept. increase height to match active border. need make nav-bar a fix height instead.
-				border: transparent 2px dashed;
 				@media only screen and (max-width: 800px) {
 					span {
 						font-size: 12px;
@@ -89,6 +93,7 @@
 					animation: spin3d 0.3s;
 					color: $color-highlight-2;
 					font-weight: 700;
+					padding: 2px;
 					border: $color-highlight-1 2px dashed;
 				}
 			}
