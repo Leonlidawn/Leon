@@ -15,6 +15,10 @@ class Home extends React.Component {
 	}
 	changeAlertMessage(alertMessage) {
 		this.setState({ alertMessage })
+		setTimeout(() => {
+			this.setState({ alertMessage: '' })
+		}, 1000);
+		//TODO: implement debounce
 	}
 
 	render() {
@@ -25,7 +29,7 @@ class Home extends React.Component {
 		/>
 		return (
 			<div className='home'>
-				{/* <AlertModal message={this.state.alertMessage} /> */}
+				<AlertModal message={this.state.alertMessage} />
 				{/* left side */}
 
 				<div className='home__left'>
