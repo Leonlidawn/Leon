@@ -1,4 +1,15 @@
 @import "src/styles/variables";
+@keyframes language-menu-drop {
+	0% {
+		opacity: 0;
+		height: 50px;
+	}
+	100% {
+		opacity: 1;
+
+		height: 53px;
+	}
+}
 .navigation-bar {
 	z-index: 2;
 	position: fixed;
@@ -64,6 +75,14 @@
 					position: absolute;
 					display: flex;
 					flex-direction: column;
+					animation: language-menu-drop 0.5s;
+
+					@for $i from 1 through 12 {
+						li:nth-of-type(#{$i}) {
+							animation: drop 0.5s;
+							animation-delay: ($i - 1) * 100ms;
+						}
+					}
 					li {
 						padding-top: 5px;
 						text-transform: capitalize;
@@ -71,6 +90,12 @@
 						&:hover {
 							color: $color-highlight-1;
 						}
+						// @for $i from 1 through 2 {
+						// 	:nth-child(#{$i}) {
+						// 		// animation: pop 1s;
+						// 		// animation-delay: calc(100ms * $i - 100);
+						// 	}
+						// }
 					}
 					&.display-none {
 						display: none;

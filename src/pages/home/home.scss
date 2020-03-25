@@ -95,6 +95,7 @@
 		font-weight: 300;
 		-webkit-font-smoothing: antialiased;
 		white-space: pre-wrap;
+		animation: bounceIn 0.7s;
 		@media only screen and (max-width: 800px) {
 			margin-top: 0;
 			padding: 15px 20px 10px 20px;
