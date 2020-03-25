@@ -2,5 +2,9 @@
 	"editor.formatOnSave": true,
 	"editor.tabSize": 2,
 	"workbench.editor.highlightModifiedTabs": true,
-	"scssFormatter.useTabs": true
+	"scssFormatter.useTabs": true,
+	"files.trimTrailingWhitespace": true,
+	"editor.insertSpaces": false,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.renderWhitespace": "all"
 }
