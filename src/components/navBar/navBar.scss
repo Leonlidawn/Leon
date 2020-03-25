@@ -75,12 +75,12 @@
 					position: absolute;
 					display: flex;
 					flex-direction: column;
-					animation: language-menu-drop 0.5s;
+					animation: language-menu-drop 0.3s;
 
 					@for $i from 1 through 12 {
 						li:nth-of-type(#{$i}) {
-							animation: drop 0.5s;
-							animation-delay: ($i - 1) * 100ms;
+							animation: drop 0.3s;
+							animation-delay: ($i - 1) * 20ms;
 						}
 					}
 					li {
