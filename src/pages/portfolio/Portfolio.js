@@ -14,7 +14,28 @@ import { isInOrAboveViewPort } from 'src/util';
 class Portfolio extends React.Component {
 
 	works = {
-
+		"JR Talent":
+		{
+			id: "jr-talent",
+			image: imageTalent,
+			description: 'A website that helps people find jobs and career related information or recruit the ideal candidate.',
+			type: PROJECT_TYPE.COMMERCIAL,
+			role: 'Full stack developer.',
+			link: 'https://jrtalent.com.au/',
+			year: 2019,
+			stack: {
+				'Front-end':
+					'CSS3, Sass, HTML5, JavaScript ES6, Bootstrap',
+				'Back-end':
+					'Node.js, ExpressJS, RESTful API',
+				'Database':
+					'MongoDB',
+				'Tooling':
+					'Git, NPM, BitBucket, JIRA, Postman',
+				'Methodologies':
+					'Agile/Scrum/Kanban, CI/CD'
+			}
+		},
 		"JR Official Website":
 		{
 			id: "jr-official",
@@ -24,7 +45,7 @@ class Portfolio extends React.Component {
 			type: PROJECT_TYPE.COMMERCIAL,
 			role: 'Full stack developer',
 			year: 2019,
-			stack: {//stacks involved 
+			stack: {//stacks involved
 				'Front-end':
 					'HTML5, CSS3, Sass, JavaScript(ES6 +), React, Redux, Redux-saga, Pug, Bootstrap',
 				'Back-end':
@@ -59,35 +80,13 @@ class Portfolio extends React.Component {
 					'Agile/Scrum/Kanban, CI/CD'
 			}
 		},
-		"JR Talent":
-		{
-			id: "jr-talent",
-			image: imageTalent,
-			description: 'A website that helps people find jobs and career related information or recruit the ideal candidate.',
-			type: PROJECT_TYPE.COMMERCIAL,
-			role: 'Full stack developer.',
-			link: 'https://jrtalent.com.au/',
-			year: 2019,
-			stack: {
-				'Front-end':
-					'CSS3, Sass, HTML5, JavaScript ES6, Bootstrap',
-				'Back-end':
-					'Node.js, ExpressJS, RESTful API',
-				'Database':
-					'MongoDB',
-				'Tooling':
-					'Git, NPM, BitBucket, JIRA, Postman',
-				'Methodologies':
-					'Agile/Scrum/Kanban, CI/CD'
-			}
-		},
 		"Leon's blog ":
 		{
 			id: "leon-blog",
 			image: imageLeon,
 			link: 'http://leonlidawn.info',
-			description: `It is this responsive website we are on. 
-		Here is a place where I will share my portfolio and resume. 
+			description: `It is this responsive website we are on.
+		Here is a place where I will share my portfolio and resume.
 		`,
 			type: PROJECT_TYPE.PERSONAL,
 			year: 2020,
