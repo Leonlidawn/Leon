@@ -80,7 +80,7 @@ class Portfolio extends React.Component {
 					'Agile/Scrum/Kanban, CI/CD'
 			}
 		},
-		"Leon's blog ":
+		"Leon's Blog":
 		{
 			id: "leon-blog",
 			image: imageLeon,
@@ -203,11 +203,15 @@ class Portfolio extends React.Component {
 									<div className="project__header">
 										<div className="project__header__left">
 											<span className="project__name">
-												{name}
-												{details.link &&
+
+												{details.link ?
 													<a className="project__link" href={details.link} target='_blank' rel='noopener noreferrer'>
+														{name}
 														<i className="fas fa-external-link-alt"></i>
-													</a>}
+													</a>
+													:
+													name
+												}
 											</span>
 										</div>
 										<div className="project__type">{details.type}</div>
