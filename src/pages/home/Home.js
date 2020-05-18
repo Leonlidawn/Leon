@@ -1,7 +1,7 @@
 import './home.scss';
 import React from 'react';
 import TypeMe from 'react-typeme';
-import portrait from './portrait1.jpeg'
+import portrait from './portrait.png'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { observer } from 'mobx-react';
 import { copyToClipboard } from 'src/util'
