@@ -96,7 +96,7 @@
 		white-space: pre-wrap;
 		animation: bounceIn 0.7s;
 		@media only screen and (max-width: 800px) {
-			margin-top: 0;
+			margin-top: 30px;
 			padding: 15px 20px 10px 20px;
 			color: $color-trivial;
 		}
@@ -154,9 +154,8 @@
 		align-items: center;
 		height: 80%;
 		padding-bottom: 10px;
-		position: fixed;
 		position: absolute;
-		top: 56%;
+		top: 330px;
 		width: 50px;
 		right: 0;
 		@media only screen and (min-height: 650px) {
