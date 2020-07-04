@@ -58,6 +58,7 @@
 	}
 
 	&__portrait {
+		animation: emerge 1s;
 		padding-top: 20px;
 		flex-basis: 200px;
 		flex-grow: 4;
@@ -100,7 +101,7 @@
 		font-weight: 300;
 		-webkit-font-smoothing: antialiased;
 		white-space: pre-wrap;
-		animation: bounceIn 0.7s;
+		animation: emerge 2.5s;
 		@media only screen and (max-width: 800px) {
 			margin-top: 30px;
 			padding: 15px 20px 10px 20px;
@@ -155,6 +156,7 @@
 		}
 	}
 	&__social {
+		animation: emerge 4s;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
