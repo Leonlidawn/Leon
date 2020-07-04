@@ -2,25 +2,20 @@ import './home.scss';
 import React from 'react';
 import TypeMe from 'react-typeme';
 import portrait from './portrait.png'
+import { message } from 'antd';
+
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { observer } from 'mobx-react';
 import { copyToClipboard } from 'src/util'
-import AlertModal from "src/components/alertModal/AlertModal"
+
 class Home extends React.Component {
 	constructor() {
 		super();
-		this.state = {
-			alertMessage: ''
-		}
-	}
-	changeAlertMessage(alertMessage) {
-		this.setState({ alertMessage })
-		setTimeout(() => {
-			this.setState({ alertMessage: '' })
-		}, 1000);
-		//TODO: implement debounce
 	}
 
+	componentDidMount() {
+
+	}
 	render() {
 		const format = this.props.format;
 		const Banner = () => <TypeMe strings={format('home.banner.array')} loop='true'
@@ -29,7 +24,7 @@ class Home extends React.Component {
 		/>
 		return (
 			<div className='home'>
-				<AlertModal message={this.state.alertMessage} />
+
 				{/* left side */}
 
 				<div className='home__left'>
@@ -42,10 +37,10 @@ class Home extends React.Component {
 					</div>
 					<div className='home__left__bottom'>
 						<div className='home__contacts' >
-							<p className='home__contacts__contact' onClick={() => { copyToClipboard('email'); this.changeAlertMessage('Email copied') }}>
+							<p className='home__contacts__contact' onClick={() => { copyToClipboard('email'); message.success('Email copied', 1); }}>
 								<i className="far fa-clone"></i>	{format('contact.email')}:<span id='email'>leonlidawn@gmail.com</span>
 							</p>
-							<p className='home__contacts__contact' onClick={() => { copyToClipboard('mobile'); this.changeAlertMessage('Mobile copied') }}>
+							<p className='home__contacts__contact' onClick={() => { copyToClipboard('mobile'); message.success('Mobile copied', 1); }}>
 								<i className="far fa-clone"></i>	{format('contact.mobile')}:<span id='mobile'>+61 481 555 767</span>
 							</p>
 						</div>
