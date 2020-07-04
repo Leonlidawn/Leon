@@ -2,15 +2,13 @@
 @keyframes language-menu-drop {
 	0% {
 		opacity: 0;
-		height: 50px;
 	}
 	100% {
 		opacity: 1;
-
-		height: 53px;
 	}
 }
 .navigation-bar {
+	user-select: none;
 	z-index: 2;
 	position: fixed;
 	display: flex;
@@ -18,7 +16,7 @@
 	justify-content: space-between;
 	width: 100%;
 	margin: auto;
-	padding: 30px 5% 10px 5%;
+	padding: 4px 5%;
 	font-size: 16px;
 	border-bottom: 2px solid $color-trivial-2;
 	background-color: white;
@@ -64,13 +62,11 @@
 					}
 				}
 				&__menu {
-					margin-top: 14px;
-					padding-left: 4px;
-					padding-bottom: 4px;
+					margin-top: 8px;
+					padding: 4px;
 					border: 2px $color-trivial-2 solid;
 					border-top: none;
-					background-color: rgb(255, 255, 255);
-
+					background-color: white;
 					width: 72px;
 					position: absolute;
 					display: flex;
@@ -90,12 +86,6 @@
 						&:hover {
 							color: $color-highlight-1;
 						}
-						// @for $i from 1 through 2 {
-						// 	:nth-child(#{$i}) {
-						// 		// animation: pop 1s;
-						// 		// animation-delay: calc(100ms * $i - 100);
-						// 	}
-						// }
 					}
 					&.display-none {
 						display: none;
@@ -119,7 +109,7 @@
 					color: $color-highlight-2;
 					font-weight: 700;
 					padding: 2px;
-					border: $color-highlight-1 2px dashed;
+					box-shadow: 0 8px 8px 0px rgb(216, 203, 203);
 				}
 			}
 			&:hover {
