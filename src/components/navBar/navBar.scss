@@ -18,7 +18,7 @@
 	margin: auto;
 	padding: 4px 5%;
 	font-size: 16px;
-	border-bottom: 2px solid $color-trivial-2;
+	box-shadow: 0 0px 3px 0px rgb(216, 203, 203);
 	background-color: white;
 	@media only screen and (max-width: 800px) {
 		padding-left: 0;
@@ -62,12 +62,11 @@
 					}
 				}
 				&__menu {
-					margin-top: 8px;
-					padding: 4px;
-					border: 2px $color-trivial-2 solid;
-					border-top: none;
+					margin-top: 5px;
+					padding: 4px 10px;
+					box-shadow: 0 4px 4px 0px rgb(230, 221, 221);
 					background-color: white;
-					width: 72px;
+					width: 76px;
 					position: absolute;
 					display: flex;
 					flex-direction: column;
