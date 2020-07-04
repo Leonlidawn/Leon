@@ -3,6 +3,9 @@
 	animation: emerge 0.8s;
 	display: flex;
 	position: relative;
+	// background: $im;
+	// background-size: cover;
+	// background: url(https://www.kuaifaka.com/static/img/back.f6b9993.png);
 	@media only screen and (max-width: 800px) {
 		flex-direction: column;
 		background-color: black;

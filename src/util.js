@@ -41,4 +41,4 @@ export function isInOrAboveViewPort(element) {
 	const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
 	const top = element.getBoundingClientRect().top
 	return top <= viewPortHeight * 0.95
-} 
+}
