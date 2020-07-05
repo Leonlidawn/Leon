@@ -21,24 +21,9 @@ class App extends React.Component {
 					<NavBar format={myFormat} oState={oState} />
 				</header>
 				<main>
-					<Route>
-						<Switch>
-							<Route exact path='/'
-								component={() =>
-									<Home
-										format={myFormat}
-									/>}
-							/>
-							<Route path='/portfolio'
-								component={() =>
-									<Portfolio
-										format={myFormat}
-									/>}
-							/>
-							<Route path='/resume'
-							/>
-						</Switch>
-					</Route>
+					<Home format={myFormat} />
+					<div className="transit"></div>
+					<Portfolio format={myFormat} />
 				</main>
 			</div>
 		);

@@ -1,7 +1,7 @@
 import english from 'src/locales/en-US';
 import chinese from 'src/locales/zh-CN';
 import { LANGUAGE } from 'src/constants/language';
-import _ from 'lodash';
+import { get } from 'lodash';
 
 export function format(language, id) {
 	let text = '';
@@ -9,10 +9,10 @@ export function format(language, id) {
 
 	switch (language) {
 		case LANGUAGE.ENGLISH:
-			text = _.get(english, id, defaultLanguage[id])
+			text = get(english, id, defaultLanguage[id])
 			break;
 		case LANGUAGE.CHINESE:
-			text = _.get(chinese, id, defaultLanguage[id])
+			text = get(chinese, id, defaultLanguage[id])
 			break;
 		default:
 			text = defaultLanguage[id]

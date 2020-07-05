@@ -20,5 +20,13 @@
 		flex-direction: column;
 		height: auto;
 		margin-top: 43px;
+		.transit {
+			height: 30vh;
+
+			@media screen and (max-width: 800px) {
+				margin-top: 0;
+				background: black;
+			}
+		}
 	}
 }

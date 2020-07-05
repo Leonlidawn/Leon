@@ -6,7 +6,17 @@
 	overflow: scroll;
 	flex-direction: column;
 	align-items: center;
-
+	background-position: sticky;
+	background-image: url(https://images.unsplash.com/photo-1539537127563-ef4adaf6e056?ixlib=rb-1.2.1&auto=format&fit=crop&w=882&q=80);
+	background-size: 100vw auto;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding-top: 100vh;
+	color: white;
+	.header {
+		color: white;
+		font-size: 50px;
+	}
 	.project {
 		animation: emerge 0.8s;
 		position: relative;
@@ -14,15 +24,17 @@
 		$border-personal: rgb(255, 200, 17) 4px solid;
 		border-radius: 3px;
 		transition: 1s linear;
-		margin-top: 60px;
+		margin-top: 200px;
 		width: 80%;
 		max-width: 1000px;
 		display: flex;
 		flex-direction: column;
-		border: $border-personal;
+		// border: $border-personal;
 		opacity: 0;
 		transform: scale(0.95, 0.95);
 		transition: opacity 1s ease-out, transform 0.2s linear;
+		// box-shadow: 0 0 10px 0 rgba(248, 248, 248, 0.589);
+
 		&.appear {
 			opacity: 1;
 			transform: scale(1, 1);
@@ -31,7 +43,7 @@
 			width: 94%;
 		}
 		&--commercial {
-			border: $border-commercial;
+			// border: $border-commercial;
 		}
 		&__header {
 			flex-wrap: wrap;
@@ -99,7 +111,7 @@
 				font-size: 20px;
 				position: relative;
 				top: -12px;
-				color: rgb(162, 160, 160);
+				color: rgb(160, 162, 161);
 				animation: emerge 1s;
 			}
 		}
@@ -129,14 +141,15 @@
 			}
 		}
 		&__image {
-			box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.15);
+			box-shadow: 0 0 20px 0 rgba(248, 248, 248, 0.952);
 			flex-grow: 3;
 			flex-basis: 300px;
 			flex-shrink: 0;
 			height: fit-content;
 			margin-right: 20px;
-			border: 1px solid rgba(0, 0, 0, 0.125);
 			margin-bottom: 20px;
+			border-radius: 10px;
+			overflow: hidden;
 			@media only screen and (max-width: 800px) {
 				margin-right: 0;
 			}

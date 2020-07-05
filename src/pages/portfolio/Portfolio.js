@@ -192,6 +192,7 @@ class Portfolio extends React.Component {
 
 		return (
 			<div className="portfolio">
+				<h1 className="header">Portfolio</h1>
 				{
 
 					Object.entries(this.works).map(
