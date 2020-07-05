@@ -152,7 +152,7 @@ class Portfolio extends React.Component {
 		{
 			id: "maths-institute",
 			image: imageMath,
-			description: 'A responsive website for Longhurst Mathematics Coaching College. This website was built in 2018 and was then taken down in 2019 due to switching to another host service provider. This website provides both content management and display.',
+			description: 'A responsive website for Longhurst Mathematics Coaching College which provides both admin panel and content display.',
 			role: 'Full-stack developer',
 			type: PROJECT_TYPE.COMMERCIAL,
 			year: 2018,
