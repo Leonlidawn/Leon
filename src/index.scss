@@ -134,6 +134,18 @@
 		transform: translateY(0px);
 	}
 }
+@keyframes slideFromBottom {
+	0% {
+		margin-top: 200px;
+		opacity: 0;
+		visibility: unset;
+	}
+	100% {
+		margin-top: 60px;
+		opacity: 1;
+		visibility: unset;
+	}
+}
 html,
 body,
 div,

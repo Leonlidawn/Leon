@@ -13,19 +13,21 @@
 		$border-commercial: rgb(239, 101, 45) 4px solid;
 		$border-personal: rgb(255, 200, 17) 4px solid;
 		border-radius: 3px;
-		transition: 1s linear;
-		margin-top: 60px;
 		width: 80%;
 		max-width: 1000px;
 		display: flex;
 		flex-direction: column;
 		border: $border-personal;
-		opacity: 0;
-		transform: scale(0.95, 0.95);
-		transition: opacity 1s ease-out, transform 0.2s linear;
-		&.appear {
+		&:first-child {
+			margin-top: 60px;
 			opacity: 1;
-			transform: scale(1, 1);
+			visibility: unset;
+		}
+		&:not(:first-child) {
+			visibility: hidden;
+			&.appear {
+				animation: slideFromBottom 1s forwards;
+			}
 		}
 		@media only screen and (max-width: 510px) {
 			width: 94%;
