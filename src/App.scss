@@ -4,8 +4,7 @@
 .App {
 	background-color: $color-background;
 	width: 100vw;
-	height: 100vh;
-	overflow: scroll;
+	height: fit-content;
 	display: flex;
 	flex-direction: column;
 	justify-content: stretch;

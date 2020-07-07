@@ -40,5 +40,6 @@ export function copyToClipboard(id) {
 export function isInOrAboveViewPort(element) {
 	const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 	const top = element.getBoundingClientRect().top;
+	console.log(top, viewPortHeight * 0.8, top <= viewPortHeight * 0.8)
 	return top <= viewPortHeight * 0.8;
 }
