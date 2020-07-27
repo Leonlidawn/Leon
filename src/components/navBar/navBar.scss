@@ -52,6 +52,7 @@
 		justify-content: space-around;
 		align-items: center;
 		li {
+			transition: all 0.3s;
 			list-style-type: none;
 			.navigation-bar__language {
 				padding: 4px;
@@ -122,10 +123,7 @@
 			}
 			&:hover {
 				cursor: pointer;
-				a {
-					transition: all 0.3s;
-					bottom: 2px;
-				}
+				transform: scale3d(1.1, 1.1, 1);
 			}
 		}
 	}
