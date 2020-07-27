@@ -156,8 +156,9 @@
 			img {
 				width: 100%;
 				object-fit: cover;
+				transition: transform 1s;
 				&:hover {
-					transform: scale3d(1.2, 1.2, 3);
+					transform: scale3d(1.1, 1.1, 1);
 				}
 			}
 		}
