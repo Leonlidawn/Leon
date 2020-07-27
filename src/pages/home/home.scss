@@ -118,6 +118,7 @@
 		}
 		.tm {
 			background: -webkit-linear-gradient(rgb(207, 205, 189), rgb(230, 228, 228));
+			background-clip: text;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			font-size: 60px;
