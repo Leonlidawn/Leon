@@ -17,7 +17,7 @@ class Playground extends React.Component {
 		return (
 
 			<div className="playground">
-				<div class="title">
+				<div className="title">
 					<h1>{format('playground.title')}</h1>
 				</div>
 				<div>{format('playground.description')}</div>
