@@ -1,12 +1,26 @@
 @import "src/styles/variables";
 .playground {
-	$color-main-background:rgba(255, 255, 255, 1);
+	$color-main-background:rgba(5, 1, 1, 0.979);
 	background:$color-main-background;
 	animation: emerge 0.8s;
 	position: relative;
-	margin: 1em;
+	padding: 1em;
 
-
+	*:not(.button){
+		color: white;
+	}
+	h1,h2,.description{
+		pointer-events: none;
+	}
+	h1,h2{
+		margin-top: 1em;
+	}
+	h2{
+		margin-left: 0.5em;
+	}
+	.description{
+		margin-left: 1em;
+	}
 	.title{
 		@include shadow-wriggle($color-yellow,$color-cyan);
 		position: relative;
@@ -18,10 +32,6 @@
 			padding: 0.1em 0.3em;
 			box-sizing: border-box;
 		}
-	}
-
-	& >*{
-
 	}
 
 }

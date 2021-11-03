@@ -1,7 +1,6 @@
 @import "src/styles/variables";
 
 .drawing-board{
-	background-color: white;
 	position: relative;
 	margin:0 5px;
 	height:500px;
@@ -10,7 +9,7 @@
 		position: absolute;
 		top: 0;
 		color: $color-trivial;
-		background: $color-background;;
+		background: rgb(92, 85, 77);;
 		width: 3em;
 		cursor:pointer;
 		box-shadow: 0 0px 3px 0px rgb(216, 203, 203);
@@ -24,33 +23,32 @@
 		box-sizing: border-box;
 		position: absolute;
 		width: 100%;
-		background-color: #d9d8c5;
 		box-sizing: border-box;
 		canvas{
 			background-color: #f7f4e8;
 		}
 	}
 	.paper{
-		box-sizing: border-box;
-		&:before, &:after{
-			box-sizing: border-box;
-			z-index: 1;
-			position: absolute;
-			content: "";
-			background-color: red;
-			bottom: 20px;
-			left: 10px;
-			width: 50%;
-			bottom: 0px;
-			max-width:20%;
-			background: #777;
-			box-shadow: 0 15px 10px #777;
-			transform: rotate(-3deg);
-		}
-		&:after{
-			transform: rotate(3deg);
-			right: 10px;
-			left: auto;
-		}
+		// box-sizing: border-box;
+		// &:before, &:after{
+		// 	box-sizing: border-box;
+		// 	z-index: 1;
+		// 	position: absolute;
+		// 	content: "";
+		// 	background-color: red;
+		// 	bottom: 20px;
+		// 	left: 10px;
+		// 	width: 50%;
+		// 	bottom: 0px;
+		// 	max-width:20%;
+		// 	background: #777;
+		// 	box-shadow: 0 15px 10px #777;
+		// 	transform: rotate(-3deg);
+		// }
+		// &:after{
+		// 	transform: rotate(3deg);
+		// 	right: 10px;
+		// 	left: auto;
+		// }
 	}
 }

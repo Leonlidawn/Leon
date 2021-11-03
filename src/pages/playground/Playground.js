@@ -20,15 +20,14 @@ class Playground extends React.Component {
 				<div className="title">
 					<h1>{format('playground.title')}</h1>
 				</div>
-				<div>{format('playground.description')}</div>
+				<div className="description">{format('playground.description')}</div>
 
 				<h2>Drawing board</h2>
 				<div>
 					<Canvas></Canvas>
 				</div>
 				<h2>Star map</h2>
-
-
+				<span className="description">comming soon ...</span>
 			</div>
 		)
 	}
