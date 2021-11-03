@@ -21,7 +21,7 @@ export default {
 		`你好，我是Leon，坐标悉尼，一个充满热诚的网页开发者。 我善用代码解决问题. 对于知识的态度是乐于探究更乐于分享。可以单干，也喜欢团队，熟悉敏捷开发. 深知有效负责的沟通是良好协作的第一基石。`,
 	'skills.array':
 		[
-			'前端: HTML5, CSS3, Sass, Less, JavaScript (ES6+), React, Redux, Redux-saga, Redux-thunk, Pug',
+			'前端: HTML5, CSS3, Scss, Less, JavaScript (ES6+), Angular, React, Redux, Redux-saga, Redux-thunk, Pug',
 			'后端: Node.js, Express.js, KeystoneJS',
 			'测试: Jest',
 			'数据库: MongoDB, MySQL',
@@ -31,5 +31,9 @@ export default {
 		],
 	'contact.email': '邮箱',
 	'contact.mobile': '手机',
-	'follow-me': '关注我'
+	'follow-me': '关注我',
+
+	'practices.title': '藏宝之地',
+	'practices.description': '收集知识的打火石，点点星火 日夜积累 也可燎原。'
+
 };

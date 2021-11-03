@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import NavBar from './components/navBar/NavBar';
 import Home from './pages/home/Home';
 import Portfolio from './pages/portfolio/Portfolio';
+import Playground from './pages/playground/Playground';
 import { LANGUAGE } from './constants/language';
 import './App.scss';
 import { observable } from 'mobx';
@@ -23,20 +24,9 @@ class App extends React.Component {
 				<main>
 					<Route>
 						<Switch>
-							<Route exact path='/'
-								component={() =>
-									<Home
-										format={myFormat}
-									/>}
-							/>
-							<Route path='/portfolio'
-								component={() =>
-									<Portfolio
-										format={myFormat}
-									/>}
-							/>
-							<Route path='/resume'
-							/>
+							<Route exact path='/' component={() => <Home format={myFormat} />} />
+							<Route path='/portfolio' component={() => <Portfolio format={myFormat} />} />
+							<Route path='/playground' component={() => <Playground format={myFormat} />} />
 						</Switch>
 					</Route>
 				</main>
