@@ -1,4 +1,5 @@
 import './home.scss';
+import { NavLink } from "react-router-dom";
 import React from 'react';
 import TypeMe from 'react-typeme';
 import portrait from './portrait.png'
@@ -30,7 +31,9 @@ class Home extends React.Component {
 					{/* up  */}
 					<div className='home__left__up'>
 						<div className='home__portrait'>
-							<img className='home__portrait__image' src={portrait} alt='profile' />
+							<NavLink exact to="/playground">
+								<img className='home__portrait__image' src={portrait} alt='profile' />
+							</NavLink>
 						</div>
 						<div className='home__intro'>{format('introduction')}</div>
 					</div>

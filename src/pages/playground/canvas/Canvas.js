@@ -23,22 +23,6 @@ class Canvas extends React.Component {
 		const ctx = this.ctx;
 		canvas.height = board.getBoundingClientRect().height;
 		canvas.width = board.getBoundingClientRect().width;
-
-		ctx.strokeStyle = "red";
-		ctx.strokeRect(100, 100, 200, 500);
-
-		ctx.strokeStyle = "blue";
-		ctx.strokeRect(120, 100, 200, 500);
-
-		ctx.strokeStyle = "green";
-
-		ctx.beginPath();
-		ctx.moveTo(120, 220);
-		ctx.lineTo(200, 400)
-		ctx.lineTo(200, 300)
-		ctx.closePath();
-		ctx.stroke();
-
 		canvas.addEventListener('mousedown', (e) => this.togglePainting(true, e, ctx));
 		canvas.addEventListener('mouseup', () => this.togglePainting(false));
 		canvas.addEventListener('mousemove', (e) => this.draw(e, ctx));
@@ -73,6 +57,11 @@ class Canvas extends React.Component {
 		if (!this.painting) return;
 		const rect = this.canvas.getBoundingClientRect();
 		c.lineTo(e.clientX - rect.left, e.clientY - rect.top);
+		let r1 = Math.random() * 255;
+		let r2 = Math.random() * 255;
+		let r3 = Math.random() * 255;
+		c.strokeStyle = `rgb(${r1},${r2},${r3})`;
+		console.log(c.strokeStyle)
 		c.stroke();
 	}
 
@@ -90,7 +79,7 @@ class Canvas extends React.Component {
 					<canvas id="drawing-canvas" > </canvas>
 				</div>
 				<div className="button" onClick={() => this.onClear()}>
-					<i class="fas fa-redo-alt"></i>
+					<i className="fas fa-redo-alt"></i>
 				</div>
 			</div>
 		)
