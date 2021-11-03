@@ -40,7 +40,7 @@ I am an excellent team player in Agile/Scrum teams. I believe efficient and resp
 	'contact.mobile': 'Mobile',
 	'follow-me': 'Follow Me',
 
-	'playground.title': 'Play ground',
+	'playground.title': 'Playground',
 	'playground.description': 'Here is the place where I put my random pieces of code snipshots. I believe this sparkcles one day will turn into sky reaching flames',
 	'playground.found': 'Oh! Looks like you\'ve found Leon\'s secrete playground!'
 };
