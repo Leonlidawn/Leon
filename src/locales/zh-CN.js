@@ -33,7 +33,8 @@ export default {
 	'contact.mobile': '手机',
 	'follow-me': '关注我',
 
-	'practices.title': '藏宝之地',
-	'practices.description': '收集知识的打火石，点点星火 日夜积累 也可燎原。'
+	'playground.title': '藏宝之地',
+	'playground.description': '收集知识的打火石，点点星火 日夜积累 也可燎原。',
+	'playground.found': '哎呀！你在旅途上遇到了了时空裂缝，误入了Leon的藏宝之地！'
 
 };

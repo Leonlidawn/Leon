@@ -27,6 +27,7 @@ class App extends React.Component {
 							<Route exact path='/' component={() => <Home format={myFormat} />} />
 							<Route path='/portfolio' component={() => <Portfolio format={myFormat} />} />
 							<Route path='/playground' component={() => <Playground format={myFormat} />} />
+							<Route path='/*' component={() => <Playground format={myFormat} found={myFormat('playground-found')} />} />
 						</Switch>
 					</Route>
 				</main>
