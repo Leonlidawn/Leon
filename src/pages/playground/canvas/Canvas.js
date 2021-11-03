@@ -46,6 +46,10 @@ class Canvas extends React.Component {
 		window.addEventListener('resize', this.resize);
 	}
 
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.resize);
+	}
+
 	resize() {
 		const board = document.getElementById('drawing-board');
 		this.canvas = document.getElementById('drawing-canvas');

@@ -4,6 +4,8 @@ $color-trivial: rgb(160, 135, 135);
 $color-trivial-2: rgba(126, 76, 29, 0.411);
 $color-highlight-1: rgb(105, 88, 88);
 $color-highlight-2: rgba(36, 2, 2, 0.671);
+$color-yellow:#ffff01;
+$color-cyan:#0ff;
 $XS: 420px;
 $S: 480px;
 $M: 767px;
@@ -38,4 +40,122 @@ $L: 1200px;
 			@content;
 		}
 	}
+}
+
+@mixin shadow-wriggle($c1, $c2){
+	&::before, &::after {
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 100%;
+
+	z-index: -1;
+	animation-timing-function: ease;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	border-radius: 5px;
+	}
+	&::before{
+		left: 0;
+		top: 0;
+		box-shadow: 0 0 17px 3px $c1, 0 0 4px 2px $c1;
+		animation-name: wriggle-top-left-clockwise;
+	}
+	&::after{
+		right: 0;
+		bottom: 0;
+		box-shadow: 0 0 17px 3px $c2,0 0 4px 2px $c2;
+		animation-name: wriggle-bottom-right-clockwise;
+	}
+}
+
+
+@keyframes wriggle-top-left-clockwise {
+  0% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%;
+  }
+  16.66% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+  }
+  32.32% {
+    top: 0;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  49.98% {
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  66.64% {
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+  }
+  83.3% {
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 50%;
+  }
+}
+
+@keyframes wriggle-bottom-right-clockwise {
+  0% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%;
+  }
+  16.66% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+  }
+  32.32% {
+    bottom: 0;
+    right: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  49.98% {
+    bottom: 50%;
+    right: 50%;
+    height: 50%;
+    width: 50%;
+  }
+  66.64% {
+    bottom: 50%;
+    right: 0;
+    height: 50%;
+    width: 100%;
+  }
+  83.3% {
+    bottom: 50%;
+    right: 0;
+    height: 50%;
+    width: 50%;
+  }
+  100% {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 50%;
+  }
 }
