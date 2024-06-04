@@ -28,13 +28,14 @@ I enjoy the excitement of learning new things and always like to share knowledge
 I am an excellent team player in Agile/Scrum teams. I believe efficient and responsible communications are the fundamentals of good collaboration.`,
 	'skills.array':
 		[
-			'Front-end: HTML5, CSS3, scss, Less, JavaScript (ES6+), Angular, React, Redux, Redux-saga, Redux-thunk, Pug',
-			'Back-end: Node.js, Express.js, KeystoneJS',
-			'Testing: Jest',
+			'Front-end: HTML5, CSS3, SCSS, Tailwind, JavaScript(ES6 +), Typescript, Angular, React, Ant Design, Bootstrap, Styled-component',
+			'Back-end:  Node.js, Express, NextJS, NestJS, KeystoneJS, GraphQl, RESTful API, Swagger, JWT, Java, Python',
+			'Testing: Jest, Cypress, K6',
 			'Databases: MongoDB, MySQL',
-			'DevOps: Docker',
+			'DevOps: AWS(EC2, S3, CodePipeline, CodeBuild, Route 53), Docker, PM2, Digital Ocean',
 			'Tooling: Git, GitHub, NPM, BitBucket, JIRA',
 			'Methodologies: Agile / Scrum / Kanban',
+			'Web 3: Web3: Solidity, Hardhat, Ether.js',
 		],
 	'contact.email': 'Email',
 	'contact.mobile': 'Mobile',
